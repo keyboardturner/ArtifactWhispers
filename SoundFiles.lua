@@ -28,15 +28,15 @@ local underlightIDList = {
 --Blood Death Knight--
 local mawofthedamnedSounds = {
 	{
-        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Gorelix_Custom_01.ogg",
+        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\BloodDK Artifact\\VO_Gorelix_Custom_01.ogg",
         ["text"] = "You've come a long way just to die.",
     },
 		{
-        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Gorelix_Custom_02.ogg",
+        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\BloodDK Artifact\\VO_Gorelix_Custom_02.ogg",
         ["text"] = "Foolish mortals!",
     },
 		{
-        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Gorelix_Custom_03.ogg",
+        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\BloodDK Artifact\\VO_Gorelix_Custom_03.ogg",
         ["text"] = "Are you so eager to take the place of my next meal?",
     },
 	{
@@ -200,51 +200,51 @@ local frostmourneOHSounds = {
 --Frost Death Knight--
 local frostmourneJokeSounds = {
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_01",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_01",
 		["text"] = "Hail to the King, baby!",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_02",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_02",
 		["text"] = "I am one cold brother.",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_03",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_03",
 		["text"] = "Darkness stopped calling. It's alright, though. We are still friends through Real ID.",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_04",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_04",
 		["text"] = "I'm afraid my condition has left me cold to your pleas of mercy.",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_05",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_05",
 		["text"] = "No man can defeat me. Although, 10 to 25 might do the trick.",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_06",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_06",
 		["text"] = "If you think I'm powerful now, you should see my abilities in Heroic mode.",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_07",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_07",
 		["text"] = "I'm looking for a few dead men with the cursed mettle to be death knights.",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_08",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_08",
 		["text"] = "It's Lich King, not Lick King. The two are very, very different jobs.",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_09",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_09",
 		["text"] = "All I want is to settle down with a Lich Queen of my own and have some little Lichlings. Is that too much to ask?",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_10",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_10",
 		["text"] = "Ever get the feeling you're hearing voices in your helmet?",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_11",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_11",
 		["text"] = "You would make an adequate ghoul. Mindless and proficient at repetitive tasks.",
 	},
 	{
-		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Frostmourne_Joke_12",
+		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_12",
 		["text"] = "The thing no one tells you about sitting on a Frozen Throne is how uch your flesh ends up stuck to it.",
 	},
 };
@@ -291,19 +291,19 @@ local frostmourneIDList = {
 --Unholy Death Knight--
 local apocalypseSounds = {
 	{
-        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kathranatir_Custom_01.ogg",
+        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_01.ogg",
         ["text"] = "Pitiful wretch.",
     },
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kathranatir_Custom_02.ogg",
-		["text"] = "You should have brought an army.",
+	["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_02.ogg",
+	["text"] = "You should have brought an army.",
     },
 	{
-        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kathranatir_Custom_03.ogg",
+        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_03.ogg",
         ["text"] = "You are pathetic.",
     },
 	{
-        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kathranatir_Custom_04.ogg",
+        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_04.ogg",
         ["text"] = "Prepare to meet your end!",
     },
 	{
@@ -311,7 +311,7 @@ local apocalypseSounds = {
         ["text"] = "I will consume your soul!",
     },
 	{
-        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kathranatir_Custom_05.ogg",
+        ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_05.ogg",
         ["text"] = "I am invincible!",
     },
 };	--May add in files from Ariden, would have to be partially custom. 
@@ -417,7 +417,7 @@ local twinbladesmuramasSounds = {
 		["text"] = "Azhir manari kirel. Akim manari galar!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_KilJaeden_Custom_01.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_01.ogg",
 		["text"] = "Unleash the Twinblades!",
 	},
 	{
@@ -433,11 +433,11 @@ local twinbladesmuramasSounds = {
 		["text"] = "Oblivion!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_KilJaeden_Custom_02.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_02.ogg",
 		["text"] = "Your fate is sealed.",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_KilJaeden_Custom_03.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_03.ogg",
 		["text"] = "You will perish with your world!",
 	},
 };
@@ -447,7 +447,7 @@ local twinbladesverusSounds = {
 		["text"] = "Behold the infinite power of the twinblades!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Varedis_Felsoul_Custom_01.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_Varedis_Felsoul_Custom_01.ogg",
 		["text"] = "Unleash your true power. Do not let the weak hold you back.",
 	},
 	{
@@ -455,7 +455,7 @@ local twinbladesverusSounds = {
 		["text"] = "Behold the might of the deceiver! Behold the glory of the demon within!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Varedis_Felsoul_Custom_02.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_Varedis_Felsoul_Custom_02.ogg",
 		["text"] = "Your soul will feed the twinblades!",
 	},
 	{
@@ -753,15 +753,15 @@ local titanstrikeSounds = {
 		["text"] = "Oh my, it would seem we are out of time, my friends.",
 	},]]	--not exactly a fitting quote, may need adjustments / usd for another situation
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Mimiron_Custom_01.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\BMHunter Artifact\\VO_Mimiron_Custom_01.ogg",
 		["text"] = "Isn't it beautiful!?",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Mimiron_Custom_02.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\BMHunter Artifact\\VO_Mimiron_Custom_02.ogg",
 		["text"] = "Wonderful!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Mimiron_Custom_03.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\BMHunter Artifact\\VO_Mimiron_Custom_03.ogg",
 		["text"] = "You might want to take cover!",
 	},
 	{
@@ -959,19 +959,19 @@ local alunethIDList = {
 --Fire Mage--
 local felomelornSounds = {
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_01.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_01.ogg",
 		["text"] = "Now you will taste true power!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_02.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_02.ogg",
 		["text"] = "Energy... Power...",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_03.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_03.ogg",
 		["text"] = "Selama ashal'anore.",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_04.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_04.ogg",
 		["text"] = "Balamore shanal!",
 	},
 	{
@@ -983,66 +983,66 @@ local felomelornSounds = {
 		["text"] = "Anar'anel belore!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_05.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_05.ogg",
 		["text"] = "Behold, the Phoenix God Al'ar!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_06.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_06.ogg",
 		["text"] = "None spare the flame!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_07.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_07.ogg",
 		["text"] = "Fire consume you!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_08.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_08.ogg",
 		["text"] = "Now you will taste true power!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Custom_09.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_09.ogg",
 		["text"] = "Know my fury!",
 	},
 };
 --Fire Mage Jokes--
 local felomelornJokeSounds = {
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_01.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_01.ogg",
 		["text"] = "I don't suffer setbecks. I revel in them.",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_02.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_02.ogg",
 		["text"] = "I hope you realize you are not nearly important enough to be this insolent!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_03.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_03.ogg",
 		["text"] = "Mmmm, yes, I'd Mana Tap that.",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_04.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_04.ogg",
 		["text"] = "This is your brain. Say hello Brain. 'Hello.' And this is your brain on fel magic. *Screams* Any questions?",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_05.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_05.ogg",
 		["text"] = "They made Lor'themar ranger-general? Really? What next? Are the blood elves becoming part of the Horde?",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_06.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_06.ogg",
 		["text"] = "You can see these orbs, too? Oh, good. Thought I was starting to freak out there for a second.",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_07.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_07.ogg",
 		["text"] = "I can never get used to the smell of burnt hair! Blecch!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_08.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_08.ogg",
 		["text"] = "Alright, SHUT UP! Will everyone just hold on for ONE SECOND?! I'm starting to crash.... Ahh, much better.",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_09.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_09.ogg",
 		["text"] = "Blood for the Blood Elves! Sun for the Sun King!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Kael_Joke_10.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_10.ogg",
 		["text"] = "Energy... Power... my people are addicted to it... You know what, I've given this speech a million times, so maybe you can just go look it up online.",
 	},
 };
@@ -1255,7 +1255,7 @@ local yulonsheilunIDList = {
 --Windwalker Monk--
 local fistoftheheavensOHSounds = {
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Alraed_Custom_01.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\WWMonk Artifact\\VO_Alraed_Custom_01.ogg",
 		["text"] = "Slaughter them!",
 	},
 	{
@@ -1263,15 +1263,15 @@ local fistoftheheavensOHSounds = {
 		["text"] = "My winds shall rip you apart!"
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Alraed_Custom_02.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\WWMonk Artifact\\VO_Alraed_Custom_02.ogg",
 		["text"] = "Witness the powers at my command!"
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Alraed_Custom_03.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\WWMonk Artifact\\VO_Alraed_Custom_03.ogg",
 		["text"] = "Al'burq wa Alra'ed hiyah!"
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Alraed_Custom_04.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\WWMonk Artifact\\VO_Alraed_Custom_04.ogg",
 		["text"] = "Destroy them!"
 	},
 	{
@@ -1285,11 +1285,11 @@ local fistoftheheavensMHSounds = {
 		["text"] = "Hah! Back to the earth with you!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Alburq_Custom_01.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\WWMonk Artifact\\VO_Alburq_Custom_01.ogg",
 		["text"] = "Winds! Obey my command!",
 	},
 	{
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\VO_Alburq_Custom_02.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\WWMonk Artifact\\VO_Alburq_Custom_02.ogg",
 		["text"] = "Like swatting insects!",
 	},
 };
