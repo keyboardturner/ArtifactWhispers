@@ -1,0 +1,8 @@
+## Interface: 70100
+## Author: Keyboardturner
+## Version: 0.0.1
+## Title: ArtifactWhispers
+## SavedVariablesPerCharacter: ArtifactWhispersSettings
+## Notes: Plays sound files relevant to the artifact skin.
+ArtifactWhispers.lua
+SoundFiles.lua
