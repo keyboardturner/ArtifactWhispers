@@ -6,7 +6,8 @@ These weapons include:
 
 **Death Knight**
 * Maw of the Damned
-* Blades of the Fallen Prince + Jokes
+* Blades of the Fallen Prince
+  + Jokes (Soon™)
 * Apocalypse
 
 **Demon Hunter**
@@ -20,10 +21,11 @@ These weapons include:
 
 **Mage**
 - (Aluneth is already in the default game.)
-* Felomelorn + Jokes
+* Felomelorn
+  + Jokes (Soon™)
 
 **Monk**
-* Mistweaver (Soon™)
+* Mistweaver
 * Windwalker
 
 **Paladin**
@@ -31,14 +33,29 @@ These weapons include:
   - Corrupted and Non-Corrupted Ashbringer Variants
 
 **Priest**
-* Holy (Soon™)
+* Holy
 - (Xal'Atath is already in the default game.)
 
 **Rogue**
-* Outlaw (Soon™)
+* Outlaw
+  - Thunderfury
+* Assassination
+
+**Shaman**
+* Elemental
+* Enhancement
+* Restoration
+
+**Warlock**
+* Affliction
+* Destruction
+
+**Warrior**
+* Arms
+* Fury
 
 **Professions**
-* Underlight Angler
+* Underlight Angler (Soon™)
 
 ## Commands
 There are several commands that can be used.
@@ -56,3 +73,5 @@ There are several commands that can be used.
   
 ## Upcoming Features
 There are more features I would eventually like to add in, such as implementing older and current Legendaries with similar sounds, situational sound files and a better profile system / menu. I **can't** however work on other language versions, because I don't know any. If you would like to contribute a full new localised version for other clients, please contact me! Creating and obtaining the custom sound files from other clients will be difficult for me.
+--
+You can donate to me if you want [here](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JVKD48P6U3TLU&lc=US&item_name=Development%20and%20Maintenance%20of%20AddOns&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted) so I can continue making AddOns and have greater free time. :)
