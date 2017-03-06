@@ -64,6 +64,8 @@ There are several commands that can be used.
     - This allows you to adjust the proc change, a value between **0** and up to **100**. The default is **1%** (and **.5%** for Frost Death Knights.)
   * **whispers** **on** or **off**
     - This allows you to enable or disable whispers. You follow this by typing **on** or **off** afterwards. The default is On.
+  * **sounds** **on** or **off**
+    - This allows you to enable or disable sounds. You follow this by typing **on** or **off** afterwards. The default is On.
   * **reset**
     - This will reset your settings, in the case that you may encounter an error. It will bring it back to the default states listed above.
   * **info**
