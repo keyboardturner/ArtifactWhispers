@@ -1,7 +1,8 @@
 local SoundService = {};
 
+local MiscArtifacts = {	--NYI
 --Fishing Artifact--
-local underlightSounds = {
+underlightSounds = {
 	{
 		["file"] = "Sound\\Creature\\Murloc\\mMurlocAggroOld.ogg",
 		["text"] = "Mrrglrlrlrmgrrr!!!",
@@ -16,17 +17,19 @@ local underlightSounds = {
 	},
 };	--May add more murloc sound files sometime.
 	--Underlight Angler--
-local underlightIDList = {
+underlightIDList = {
 	--Underlight Angler--
 	[841] = true,	--red--
 	[988] = true,	--orange--
 	[989] = true,	--blue--
 };
 
+};
 
+local DeathKnightArtifacts = {
 
 --Blood Death Knight--
-local mawofthedamnedSounds = {
+mawofthedamnedSounds = {
 	{
         ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\BloodDK Artifact\\VO_Gorelix_Custom_01.ogg",
         ["text"] = "You've come a long way just to die.",
@@ -45,7 +48,7 @@ local mawofthedamnedSounds = {
     },
 };	--more sound files would be added if Netrius / Netrezaar was ever added.
 	--Blood Death Knight--
-local mawofthedamnedIDList = {
+mawofthedamnedIDList = {
 	--Maw of the Damned--
 	[107] = true,	--red--
 	[355] = true,	--purple--
@@ -84,7 +87,7 @@ local mawofthedamnedIDList = {
 };
 
 --Frost Death Knight--
-local frostmourneMHSounds = {
+frostmourneMHSounds = {
     {
         ["file"] = "Sound\\Creature\\Memory_of_Arthas\\VO_703_Memory_of_Arthas_01.ogg",
         ["text"] = "See the spirits writhe and twist.",
@@ -138,7 +141,7 @@ local frostmourneMHSounds = {
         ["text"] = "The infinite dark is patient. We will all be claimed in the end.",
     },
 };
-local frostmourneOHSounds = {
+frostmourneOHSounds = {
 	{
         ["file"] = "Sound\\Creature\\LichKing\\EH_LichKing_Chapter1Whisper01.ogg",
         ["text"] = "No mercy.",
@@ -198,7 +201,7 @@ local frostmourneOHSounds = {
 };
 
 --Frost Death Knight--
-local frostmourneJokeSounds = {
+frostmourneJokeSounds = {
 	{
 		["file"] = "Inferface\\AddOns\\ArtifactWhispers\\SoundFiles\\FrostDK Artifact\\VO_Frostmourne_Joke_01",
 		["text"] = "Hail to the King, baby!",
@@ -250,7 +253,45 @@ local frostmourneJokeSounds = {
 };
 
 	--Frost Death Knight--
-local frostmourneIDList = {
+frostmourne1IDList = {
+	--Blades of the Fallen Prince--
+	[111] = true,	--blue--
+	[374] = true,	--green--
+	[375] = true,	--yellow--
+	[376] = true,	--light blue--
+	
+	--Frostmourne's Legacy--
+	[370] = true,	--blue--
+	[377] = true,	--green--
+	[378] = true,	--orange--
+	[379] = true,	--light blue--
+	
+	--Sindragosa's Fury--
+	[371] = true,	--blue--
+	[380] = true,	--green--
+	[381] = true,	--orange--
+	[382] = true,	--yellow--
+	
+	--Gravekeeper--
+	[373] = true,	--blue--
+	[386] = true,	--green--
+	[387] = true,	--purple--
+	[388] = true,	--orange--
+	
+	--Soul Collector--
+	[372] = true,	--light blue--
+	[383] = true,	--turqoise--
+	[384] = true,	--purple--
+	[385] = true,	--red--
+	
+	--Dark Runeblade--
+	[870] = true,	--green--
+	[869] = true,	--blue--
+	[871] = true,	--purple--
+	[872] = true,	--red--
+};
+	--Frost Death Knight--
+frostmourne2IDList = {
 	--Blades of the Fallen Prince--
 	[111] = true,	--blue--
 	[374] = true,	--green--
@@ -289,14 +330,14 @@ local frostmourneIDList = {
 };
 
 --Unholy Death Knight--
-local apocalypseSounds = {
+apocalypseSounds = {
 	{
         ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_01.ogg",
         ["text"] = "Pitiful wretch.",
     },
 	{
-	["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_02.ogg",
-	["text"] = "You should have brought an army.",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_02.ogg",
+		["text"] = "You should have brought an army.",
     },
 	{
         ["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\UnholyDK Artifact\\VO_Kathranatir_Custom_03.ogg",
@@ -316,7 +357,7 @@ local apocalypseSounds = {
     },
 };	--May add in files from Ariden, would have to be partially custom. 
 	--Unholy Death Knight--
-local apocalypseIDList = {
+apocalypseIDList = {
 	--Apocalypse--
 	[110] = true,	--green--
 	[112] = true,	--light blue--
@@ -354,17 +395,19 @@ local apocalypseIDList = {
 	[406] = true,	--light blue--
 };
 
+};
 
+local DemonHunterArtifacts = {
 
 --Vengeance Demon Hunter--
-local aldrachiSounds = {
+aldrachiSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},	--No Aldrachi / Toranaar files exist
 };
 	--Vengeance Demon Hunter--
-local aldrachiIDList = {
+aldrachiIDList = {
 		--Aldrachi Warblades--
 		[554] = true,	--yellow--
 		[555] = true,	--green--
@@ -402,16 +445,17 @@ local aldrachiIDList = {
 		[573] = true,	--red--
 };
 
+
 --Havoc Demon Hunter--
-local twinbladesmuramasSounds = {
-	{
+twinbladesmuramasSounds = {
+	--[[{
 		["file"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN01.ogg",
 		["text"] = "Chaos!",
-	},
-	{
+	},]]	--old kiljaeden
+	--[[{
 		["file"] = "Sound\\Creature\\KilJaeden\\KILJAEDENKILL02.ogg",
 		["text"] = "Anakh Kyree!",
-	},
+	},]]	--old kiljaeden
 	{
 		["file"] = "Sound\\Creature\\KilJaeden\\VO_703_Kiljaeden_02.ogg",
 		["text"] = "Azhir manari kirel. Akim manari galar!",
@@ -420,18 +464,18 @@ local twinbladesmuramasSounds = {
 		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_01.ogg",
 		["text"] = "Unleash the Twinblades!",
 	},
-	{
+	--[[{
 		["file"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN02.ogg",
 		["text"] = "Destruction!",
-	},
+	},]]	--old kiljaeden
 	{
 		["file"] = "Sound\\Creature\\KilJaeden\\VO_703_KilJaeden_15.ogg",
 		["text"] = "Pathetic.",
 	},
-	{
+	--[[{
 		["file"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN03.ogg",
 		["text"] = "Oblivion!",
-	},
+	},]]	--old kiljaeden
 	{
 		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_02.ogg",
 		["text"] = "Your fate is sealed.",
@@ -440,8 +484,120 @@ local twinbladesmuramasSounds = {
 		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_03.ogg",
 		["text"] = "You will perish with your world!",
 	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_04.ogg",
+		["text"] = "Chaos will consume you.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_05.ogg",
+		["text"] = "I will feed upon your ashes.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_06.ogg",
+		["text"] = "The fel fuels me!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_07.ogg",
+		["text"] = "Feel the chaos consume you!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_08.ogg",
+		["text"] = "Still you resist...",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_09.ogg",
+		["text"] = "Suffer!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_10.ogg",
+		["text"] = "Smolder.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_11.ogg",
+		["text"] = "Burn and die!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_12.ogg",
+		["text"] = "Burn.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_13.ogg",
+		["text"] = "You will all burn!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_14.ogg",
+		["text"] = "Consume them all!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_15.ogg",
+		["text"] = "Who will save you now?",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_16.ogg",
+		["text"] = "Fall before your master.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_17.ogg",
+		["text"] = "Death reigns upon you.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_18.ogg",
+		["text"] = "Obliteration beckons!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_19.ogg",
+		["text"] = "We will reduce your world to cinders.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_20.ogg",
+		["text"] = "Still you fight us, still you deny the inevitable.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_21.ogg",
+		["text"] = "Your incessant resistance is maddening.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_22.ogg",
+		["text"] = "A vessel for my fury.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_23.ogg",
+		["text"] = "Confront your own darkness.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_24.ogg",
+		["text"] = "You cannot resist your own nature.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_25.ogg",
+		["text"] = "Give in to your fears... your desires...",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_26.ogg",
+		["text"] = "Face your destiny!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_27.ogg",
+		["text"] = "Your defiance is futile.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_28.ogg",
+		["text"] = "Your souls will soon know oblivion!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_29.ogg",
+		["text"] = "Let the shadows win.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_30.ogg",
+		["text"] = "Fall into darkness.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_31.ogg",
+		["text"] = "Give in.",
+	},
 };
-local twinbladesverusSounds = {
+twinbladesverusSounds = {
 	{
 		["file"] = "Sound\\Creature\\Varedis_Felsoul\\VO_70_Varedis_Felsoul_04.ogg",
 		["text"] = "Behold the infinite power of the twinblades!",
@@ -462,9 +618,13 @@ local twinbladesverusSounds = {
 		["file"] = "Sound\\Creature\\Varedis_Felsoul\\VO_703_Varedis_Felsoul_12.ogg",
 		["text"] = "Be cleansed by fire!",
 	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_Varedis_Felsoul_Custom_03.ogg",
+		["text"] = "Witness the power of the deceiver!",
+	},
 };
 	--Havoc Demon Hunter--
-local twinbladesIDList = {
+twinblades1IDList = {
 		--Twinblades of the Deceiver--
 		[26] = true,	--green--
 		[25] = true,	--light blue--
@@ -500,19 +660,59 @@ local twinbladesIDList = {
 		[981] = true,	--teal--
 		[983] = true,	--purple--
 		[984] = true,	--red--
-}
+};
+	--Havoc Demon Hunter--
+twinblades2IDList = {
+		--Twinblades of the Deceiver--
+		[26] = true,	--green--
+		[25] = true,	--light blue--
+		[27] = true,	--purple--
+		[38] = true,	--red--
+		
+		--Hand of the Illidari--
+		[30] = true,	--green--
+		[29] = true,	--blue--
+		[31] = true,	--purple--
+		[32] = true,	--red--
+		
+		--Darkenblade--
+		[36] = true,	--red--
+		[34] = true,	--green--
+		[35] = true,	--purple--
+		[33] = true,	--faded red--
+		
+		--Demon's Touch--
+		[43] = true,	--purple--
+		[42] = true,	--green--
+		[41] = true,	--blue--
+		[44] = true,	--yellow--
+		
+		--Flamereaper--
+		[37] = true,	--red--
+		[38] = true,	--green--
+		[39] = true,	--orange--
+		[40] = true,	--purple--
+		
+		--Deathwalker--
+		[982] = true,	--green--
+		[981] = true,	--teal--
+		[983] = true,	--purple--
+		[984] = true,	--red--
+};
 
+};
 
+local DruidArtifacts = {
 
 --Balance Druid--
-local scytheofeluneSounds = {
+scytheofeluneSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},	--No sounds from Elune / fitting sounds from Goldrinn are available
 };
 	--Balance Druid--
-local scytheofeluneIDList = {
+scytheofeluneIDList = {
 	--Scythe of Elune--
 	[244] = true,	--blue--
 	[411] = true,	--green--
@@ -551,14 +751,14 @@ local scytheofeluneIDList = {
 };
 
 --Feral Druid--
-local fangsofashamaneSounds = {
+fangsofashamaneSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},	--No sounds from ashamane are available
 };
 	--Feral Druid--
-local fangsofashamaneIDList = {
+fangsofashamaneIDList = {
 	--Fangs of Ashamane--
 	[427] = true,	--brown TAUREN--
 	[426] = true,	--green TROLL--
@@ -600,7 +800,7 @@ local fangsofashamaneIDList = {
 };
 
 --Guardian Druid--
-local clawsofursocSounds = {
+clawsofursocSounds = {
 	{
 		["file"] = "Sound\\Creature\\Ursoc\\VO_701_Ursoc_09.ogg",
 		["text"] = "I will flatten you like saplings!",
@@ -615,7 +815,7 @@ local clawsofursocSounds = {
 	},
 };
 	--Guardian Druid--
-local clawsofursocIDList = {
+clawsofursocIDList = {
 	--Claws of Ursoc--
 	[264] = true,	--brown TAUREN--
 	[121] = true,	--purple NIGHT ELF--
@@ -650,7 +850,7 @@ local clawsofursocIDList = {
 	[285] = true,	--white--			
 };
 --Guardian Druid, Nightmare--
-local corruptedursocSounds = {
+corruptedursocSounds = {
 	{
 		["file"] = "Sound\\Creature\\Ursoc\\VO_701_Ursoc_01.ogg",
 		["text"] = "The Nightmare... consumes me... compells me... to serve. To KILL!",
@@ -690,7 +890,7 @@ local corruptedursocSounds = {
 	
 };
 	--Guardian Druid, Nightmare--
-local corruptedursocIDList = {
+corruptedursocIDList = {
 	--Fallen to Nightmare--
 	[272] = true,	--blue--
 	[280] = true,	--orange--
@@ -699,14 +899,14 @@ local corruptedursocIDList = {
 };
 
 --Restoration Druid--
-local ghanirSounds = {
+ghanirSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},	--no G'hanir sounds / fitting aviana sounds
 };
 	--Restoration Druid--
-local ghanirIDList = {
+ghanirIDList = {
 	--G'Hanir, the Mother Tree--
 	[45] = true,	--green--
 	[46] = true,	--pink--
@@ -744,10 +944,12 @@ local ghanirIDList = {
 	[64] = true,	--blue--
 };
 
+};
 
+local HunterArtifacts = {
 
 --Beast Mastery Hunter--
-local titanstrikeSounds = {
+titanstrikeSounds = {
 	--[[{
 		["file"] = "Sound\\Creature\\Mimiron\\UR_Mimiron_Berserk01.ogg",
 		["text"] = "Oh my, it would seem we are out of time, my friends.",
@@ -778,7 +980,7 @@ local titanstrikeSounds = {
 	},
 };
 	--Beast Mastery Hunter--
-local titanstrikeIDList = {
+titanstrikeIDList = {
 		--Titanstrike--
 		[288] = true,	--blue--
 		[452] = true,	--purple--
@@ -817,14 +1019,14 @@ local titanstrikeIDList = {
 };
 
 --Marksmanship Hunter--
-local thasdorahSounds = {
+thasdorahSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",	--No sound files from either Alleria or Thas'alah
 	},
 };
 	--Marksmanship Hunter--
-local thasdorahIDList = {
+thasdorahIDList = {
 		--Thas'dorah, Legacy of the Windrunners--
 		[114] = true,	--light blue--
 		[209] = true,	--green--
@@ -863,14 +1065,14 @@ local thasdorahIDList = {
 };
 
 --Survival Hunter--
-local talonclawSounds = {
+talonclawSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	}	--There are no sound files in the game from Ohn'ahra
 };
 	--Survival Hunter--
-local talonclawIDList = {
+talonclawIDList = {
 		--Talonclaw--
 		[125] = true,	--red--
 		[467] = true,	--purple--
@@ -908,17 +1110,19 @@ local talonclawIDList = {
 		[485] = true,	--red--
 };
 
+};
 
+local MageArtifacts = {
 
 --Arcane Mage--
-local alunethSounds = {
+alunethSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},	--Aluneth already has many sound files. None are exactly unused sound files, either.
 };
 	--Arcane Mage--
-local alunethIDList = {
+alunethIDList = {
 		--Aluneth--
 		[126] = true,	--purple--
 		[129] = true,	--blue--
@@ -957,7 +1161,7 @@ local alunethIDList = {
 };
 
 --Fire Mage--
-local felomelornSounds = {
+felomelornSounds = {
 	{
 		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Custom_01.ogg",
 		["text"] = "Now you will taste true power!",
@@ -1004,7 +1208,7 @@ local felomelornSounds = {
 	},
 };
 --Fire Mage Jokes--
-local felomelornJokeSounds = {
+felomelornJokeSounds = {
 	{
 		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FireMage Artifact\\VO_Kael_Joke_01.ogg",
 		["text"] = "I don't suffer setbecks. I revel in them.",
@@ -1047,7 +1251,7 @@ local felomelornJokeSounds = {
 	},
 };
 	--Fire Mage--
-local felomelornIDList = {
+felomelornIDList = {
 		--Felo'melorn--
 		[124] = true,	--red--
 		[480] = true,	--purple--
@@ -1083,17 +1287,17 @@ local felomelornIDList = {
 		[894] = true,	--purple--
 		[895] = true,	--red--
 		[896] = true,	--grey--
-}
+};
 
 --Frost Mage--
-local ebonchillSounds = {
+ebonchillSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},	--I would put fitting Alodi quotes, but all of his quotes are out of context entirely
 };
 	--Frost Mage--
-local ebonchillIDList = {
+ebonchillIDList = {
 		--Ebonchill--
 		[168] = true,	--blue--
 		[169] = true,	--green--
@@ -1131,17 +1335,19 @@ local ebonchillIDList = {
 		[183] = true,	--blue--
 };
 
+};
 
+local MonkArtifacts = {
 
 --Brewmaster Monk--
-local fuzanSounds = {
+fuzanSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},	--I considered The Monkey King's sound files, but they don't fit well.
 };
 	--Brewmaster Monk--
-local fuzanIDList = {
+fuzanIDList = {
 	--Fu Zan, the Wanderer's Companion--
 	[289] = true,	--jade--
 	[336] = true,	--blue--
@@ -1177,17 +1383,49 @@ local fuzanIDList = {
 	[358] = true,	--jade--
 	[357] = true,	--blue--
 	[360] = true,	--purple--
-}
+};
 
 --Mistweaver Monk--
-local sheilunSounds = {
+sheilunSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
-	},	--Considering Xuen / ShaoHao, no work done yet.
+		["file"] = "Sound\\Creature\\Xuen\\VO_54_TI_XUEN_KILL.OGG",
+		["text"] = "Return twice as powerful.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Xuen\\VO_54_TI_XUEN_SPELL_1.OGG",
+		["text"] = "Believe in your strength.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Xuen\\VO_54_TI_XUEN_SPELL_2.OGG",
+		["text"] = "You have the power to change your destiny.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Xuen\\VO_54_TI_XUEN_SPELL_3.OGG",
+		["text"] = "Do not mistake the power that darkness offers for true strength.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Xuen\\VO_54_TI_XUEN_SPELL_1.OGG",
+		["text"] = "Hero, you are an inspiration.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Xuen\\VO_White_Tiger_Farewell_01.OGG",
+		["text"] = "Remember, strength comes in many forms.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Xuen\\VO_White_Tiger_Farewell_03.OGG",
+		["text"] = "Test your might.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Xuen\\VO_White_Tiger_Farewell_04.OGG",
+		["text"] = "Fight with strength; fight with honor.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Xuen\\VO_White_Tiger_Greeting_02.OGG",
+		["text"] = "Show me your strength.",
+	},
 };
 	--Mistweaver Monk--
-local sheilunIDList = {
+sheilunIDList = {
 	--Shelun, Staff of the Mists--
 	[123] = true,	--blue--
 	[509] = true,	--jade--
@@ -1207,14 +1445,46 @@ local sheilunIDList = {
 	[936] = true,	--grey--
 };
 --Mistweaver Monk--
-local chijisheilunSounds = {
+chijisheilunSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Sound\\Creature\\Chiji\\VO_5.1_ALP_RedCrane_Conclude_01.OGG",
+		["text"] = "A sword is the weapon of a warrior, but patience is the weapon of kings.",
 	},	--chiji
+	{
+		["file"] = "Sound\\Creature\\Chiji\\VO_54_RED_CRANE_LEGENDARY_CELE_01.OGG",
+		["text"] = "I knew you were destined for greatness.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Chiji\\VO_54_TI_CHIJI_KILL.OGG",
+		["text"] = "Do not give up on yourself!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Chiji\\VO_54_TI_CHIJI_SPELL_1.OGG",
+		["text"] = "Believe in one another, and let others carry hope for you.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Chiji\\VO_54_TI_CHIJI_SPELL_2.OGG",
+		["text"] = "Without hope, there is no brightness in the future.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Chiji\\VO_54_TI_CHIJI_SPELL_3.OGG",
+		["text"] = "Create the destiny you seek.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Chiji\\VO_Red_Crane_Farewell_01.OGG",
+		["text"] = "We must never give in to despair.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Chiji\\VO_Red_Crane_Farewell_02.OGG",
+		["text"] = "Hope is eternal.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Chiji\\VO_Red_Crane_Farewell_03.OGG",
+		["text"] = "Peace be with you.",
+	},
 };
 	--Mistweaver Monk--
-local chijisheilunIDList = {
+chijisheilunIDList = {
 	--Chi-Ji's Spirit--
 	[517] = true,	--red--
 	[515] = true,	--jade--
@@ -1222,14 +1492,106 @@ local chijisheilunIDList = {
 	[506] = true,	--blue--
 };
 --Mistweaver Monk--
-local corruptedsheilunSounds = {
+corruptedsheilunSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
-	},	--sha / shadserpent
-};
+		["file"] = "Sound\\Creature\\ShadSerpent\\VO_TES_SERPENT_EVENT_DAYTONIGHT_02.OGG",
+		["text"] = "Darkness grows...",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShadSerpent\\VO_TES_SERPENT_EVENT_DAYTONIGHT_02.OGG",
+		["text"] = "Light fades!",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShadSerpent\\VO_TES_SERPENT_SLAY_01.OGG",
+		["text"] = "Die in darkness.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShadSerpent\\VO_TES_SERPENT_SLAY_02.OGG",
+		["text"] = "The night surrounds you.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShadSerpent\\VO_TES_SERPENT_SPELL_NIGGHTMARE_01.OGG",
+		["text"] = "Overwhelming fear!",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfHatred\\VO_Sha_of_Hatred_Palewind_01.OGG",
+		["text"] = "You pitiful weaklings!",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfHatred\\VO_Sha_of_Hatred_Palewind_02.OGG",
+		["text"] = "Even your strongest warriors succumb like lambs to the slaughter.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfHatred\\VO_Sha_of_Hatred_Palewind_03.OGG",
+		["text"] = "Your turn will come. Hate will turn you all against one another until this whole world burns!",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfHatred\\VO_SPM_HATRED_AGGRO_01.OGG",
+		["text"] = "Hatred will consume and conquer all!",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfHatred\\VO_SPM_HATRED_SLAY_02.OGG",
+		["text"] = "Feed me your hatred.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfHatred\\VO_TS_SHA_OF_HATRED_FINALE_BOSS_02.OGG",
+		["text"] = "The hatred inside you drives your hunt for me. You are already mine.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfHatred\\VO_TS_SHA_OF_HATRED_FINALE_BOSS_04.OGG",
+		["text"] = "Everything that you are is mine to destroy.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfFear\\VO_TES_FEAR_AGGRO_01.OGG",
+		["text"] = "You will know fear!",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfFear\\VO_TES_FEAR_SLAY_01.OGG",
+		["text"] = "Drown in terror.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_Shadow_of_Doubt_Death_03.OGG",
+		["text"] = "You cannot destroy us.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_Shadow_of_Doubt_Death_04.OGG",
+		["text"] = "You cannot hope to stop us.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_Shadow_of_Doubt_Say_01.OGG",
+		["text"] = "We will reclaim this world.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_Shadow_of_Doubt_Say_02.OGG",
+		["text"] = "You will fail.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_Shadow_of_Doubt_Say_03.OGG",
+		["text"] = "Your fragile minds are your greatest weakness.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_Shadow_of_Doubt_Say_04.OGG",
+		["text"] = "Your world will end in darkness.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_TJS_DOUBT_FIGMENT_02.OGG",
+		["text"] = "Succumb to the darkness inside your soul.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_TJS_DOUBT_RESET.OGG",
+		["text"] = "All is lost.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_TJS_DOUBT_SLAY_01.OGG",
+		["text"] = "Abandon all hope.",
+	},
+	{
+		["file"] = "Sound\\Creature\\ShaOfDoubt\\VO_TJS_DOUBT_SLAY_02.OGG",
+		["text"] = "Embrace your despair",
+	},
+}; --ShaOfHatred / ShaOfFear / ShaOfDoubt / ShaOfPride / ShaOfViolence / ShaOfAnger
 	--Mistweaver Monk--
-local corruptedsheilunIDList = {
+corruptedsheilunIDList = {
 	--Sha's Torment--
 	[508] = true,	--blue--
 	[521] = true,	--jade--
@@ -1237,14 +1599,38 @@ local corruptedsheilunIDList = {
 	[523] = true,	--blue--
 };
 --Mistweaver Monk--
-local yulonsheilunSounds = {
+yulonsheilunSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
-	},	--yulon
-};
+		["file"] = "Sound\\Creature\\YuLon\\VO_54_TI_YULON_SPELL_1.OGG",
+		["text"] = "Listen to your inner voice and seek out the truth.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YuLon\\VO_54_TI_YULON_SPELL_2.OGG",
+		["text"] = "Do not let your judgment be clouded in trying times.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YuLon\\VO_54_TI_YULON_SPELL_3.OGG",
+		["text"] = "Always consider the consequences of your actions.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YuLon\\VO_JadeSerpent_Farewell_02.OGG",
+		["text"] = "Wisdom guide your path.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YuLon\\VO_JadeSerpent_Farewell_04.OGG",
+		["text"] = "The cycle always turns.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YuLon\\VO_JadeSerpent_Greeting_02.OGG",
+		["text"] = "May joy be in your heart.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YuLon\\VO_JadeSerpent_Greeting_03.OGG",
+		["text"] = "I will guide your way.",
+	},
+};	--yulon
 	--Mistweaver Monk--
-local yulonsheilunIDList = {
+yulonsheilunIDList = {
 	--Breath of the Undying Serpent--
 	[519] = true,	--jade--
 	[518] = true,	--orange--
@@ -1253,7 +1639,7 @@ local yulonsheilunIDList = {
 };
 
 --Windwalker Monk--
-local fistoftheheavensOHSounds = {
+fistoftheheavensOHSounds = {
 	{
 		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\WWMonk Artifact\\VO_Alraed_Custom_01.ogg",
 		["text"] = "Slaughter them!",
@@ -1279,7 +1665,7 @@ local fistoftheheavensOHSounds = {
 		["text"] = "Shi'alah Y'Mill!"
 	},
 };
-local fistoftheheavensMHSounds = {
+fistoftheheavensMHSounds = {
 	{
 		["file"] = "Sound\\Creature\\AsimAlAkir\\VO_VP_AsimAlAkir_Event02.ogg",
 		["text"] = "Hah! Back to the earth with you!",
@@ -1294,7 +1680,7 @@ local fistoftheheavensMHSounds = {
 	},
 };
 	--Windwalker Monk--
-local fistoftheheavensIDList = {
+fistoftheheavensOHIDList = {
 	--Fist of the Heavens--
 	[290] = true,	--blue--
 	[528] = true,	--jade--
@@ -1330,19 +1716,59 @@ local fistoftheheavensIDList = {
 	[540] = true,	--jade--
 	[541] = true,	--red--
 	[542] = true,	--grey-blue--
-}
+};
 
+fistoftheheavensMHIDList = {
+	--Fist of the Heavens--
+	[290] = true,	--blue--
+	[528] = true,	--jade--
+	[529] = true,	--red--
+	[530] = true,	--yellow--
+	
+	--Al'Akir's Touch--
+	[533] = true,	--yellow--
+	[531] = true,	--jade--
+	[532] = true,	--red--
+	[524] = true,	--blue--
+	
+	--Spirit's Reach--
+	[525] = true,	--blue--
+	[534] = true,	--red--
+	[535] = true,	--grey--
+	[536] = true,	--jade--
+	
+	--Shado-Pan Legacy--
+	[538] = true,	--red--
+	[537] = true,	--jade--
+	[525] = true,	--lavender--
+	[526] = true,	--yellow--
+	
+	--Xuen's Enforcer--
+	[941] = true,	--jade--
+	[942] = true,	--red--
+	[943] = true,	--grey-blue--
+	[944] = true,	--yellow--
+	
+	--Stormfist--
+	[527] = true,	--blue--
+	[540] = true,	--jade--
+	[541] = true,	--red--
+	[542] = true,	--grey-blue--
+};
 
+};
+
+local PaladinArtifacts = {
 
 --Holy Paladin--
-local silverhandSounds = {
+silverhandSounds = {
 	{
         ["file"] = "soundpath",
         ["text"] = "text1",
     },	--No sound files from Tyr exist.
 };
 	--Holy Paladin--
-local silverhandIDList = {
+silverhandIDList = {
 	--The Silver Hand--
 	[120] = true,	--yellow--
 	[547] = true,	--light blue--
@@ -1381,14 +1807,14 @@ local silverhandIDList = {
 };
 
 --Protection Paladin--
-local truthguardSounds = {
+truthguardSounds = {
 	{
         ["file"] = "soundpath",
         ["text"] = "text1",
     },
 };
 	--Protection Paladin--
-local truthguardIDList = {
+truthguardIDList = {
 	--Truthguard--
 	[291] = true,	--blue--
 	[704] = true,	--orange--
@@ -1427,7 +1853,7 @@ local truthguardIDList = {
 };
 
 --Retribution Paladin, Good Ashbringer--
-local goodashbringerSounds = {
+goodashbringerSounds = {
     {
         ["file"] = "Sound\\Creature\\The_Ashbringer\\VO_703_The_Ashbringer_01.ogg",
         ["text"] = "Courage is your greatest weapon.",
@@ -1498,7 +1924,7 @@ local goodashbringerSounds = {
     },
 };
 	--Retribution Paladin, Good Ashbringer--
-local goodashbringerIDList = {
+goodashbringerIDList = {
 	--Ashbringer--
 	[9] = true,		--red--
 	[8] = true,		--yellow--
@@ -1524,7 +1950,7 @@ local goodashbringerIDList = {
 	[24] = true,	--purple--
 };
 --Retribution Paladin, Corrupted Ashbringer--
-local corruptedashbringerSounds = {
+corruptedashbringerSounds = {
     {
         ["file"] = "Sound\\Creature\\Ashbringer\\ASH_SPEAK_01.ogg",
         ["text"] = "I was pure once.",
@@ -1575,7 +2001,7 @@ local corruptedashbringerSounds = {
     },
 };
 	--Retribution Paladin, Corrupted Ashbringer--
-local corruptedashbringerIDList = {
+corruptedashbringerIDList = {
 	--Fallen Hope--
 	[17] = true,	--purple--
 	[18] = true,	--dark blue--
@@ -1589,16 +2015,19 @@ local corruptedashbringerIDList = {
 	[868] = true	--yellow--
 };
 
+};
+
+local PriestArtifacts = {
 
 --Discipline Priest--
-local lightswrathSounds = {
+lightswrathSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},
 };
 	--Discipline Priest--
-local lightswrathIDList = {
+lightswrathIDList = {
 	--Light's Wrath--
 	[292] = true,	--blue--
 	[726] = true,	--purple--
@@ -1637,14 +2066,26 @@ local lightswrathIDList = {
 };
 
 --Holy Priest--
-local tuureSounds = {
+tuureSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Sound\\Creature\\Saara\\VO_70_SAARA_FAREWELL_01.ogg",
+		["text"] = "Walk in Light.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Saara\\VO_70_SAARA_FAREWELL_02.ogg",
+		["text"] = "Light reveal your path.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Saara\\VO_70_SAARA_GREETING_01.ogg",
+		["text"] = "In the Light we are reborn.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Saara\\VO_70_SAARA_GREETING_02.ogg",
+		["text"] = "I will help you.",
 	},
 };
 	--Holy Priest--
-local tuureIDList = {
+tuureIDList = {
 	--T'uure, Beacon of the Naaru--
 	[118] = true,	--blue--
 	[745] = true,	--green--
@@ -1663,6 +2104,12 @@ local tuureIDList = {
 	[754] = true,	--purple--
 	[755] = true,	--pink--
 	
+	--Embrace of the Void--
+	[763] = true,	--purple--
+	[761] = true,	--orange--
+	[762] = true,	--dark teal--
+	[760] = true,	--red--
+	
 	--Memory of Argus--
 	[756] = true,	--blue--
 	[757] = true,	--red--
@@ -1675,7 +2122,7 @@ local tuureIDList = {
 	[911] = true,	--teal--
 	[912] = true,	--blue--
 };
---Holy Priest, Evil--
+--[[--Holy Priest, Evil--
 local corruptedtuureSounds = {
 	{
 		["file"] = "soundpath",
@@ -1690,16 +2137,16 @@ local corruptedtuureIDList = {
 	[762] = true,	--dark teal--
 	[760] = true,	--red--
 };
-
+]]--
 --Shadow Priest--
-local knifewifeSounds = {
+knifewifeSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},
 };
 	--Shadow Priest--
-local knifewifeIDList = {
+knifewifeIDList = {
 	--Blade of the Black Empire--
 	[119] = true,	--blue--
 	[245] = true,	--purple--
@@ -1737,17 +2184,19 @@ local knifewifeIDList = {
 	[852] = true,	--red--
 };
 
+};
 
+local RogueArtifacts = {
 
 --Subtlety Rogue--
-local fangsofthedevourerSounds = {
+fangsofthedevourerSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},
 };
 	--Subtlety Rogue--
-local fangsofthedevourerIDList = {
+fangsofthedevourerIDList = {
 		--Fangs of the Devourer--
 		[67] = true,	--green--
 		[68] = true,	--blue--
@@ -1786,14 +2235,14 @@ local fangsofthedevourerIDList = {
 };
 
 --Outlaw Rogue--
-local dreadbladeSounds = {
+dreadbladeSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},
 };
 	--Outlaw Rogue--
-local dreadbladeIDList = {
+dreadbladeIDList = {
 		--The Dreadblades--
 		[692] = true,	--red--
 		[693] = true,	--blue--
@@ -1823,7 +2272,40 @@ local dreadbladeIDList = {
 		[701] = true,	--purple--
 		[702] = true,	--red--
 		[703] = true,	--yellow--
-		
+};
+--Outlaw Rogue--
+thunderfurySounds = {
+	{
+		["file"] = "Sound\\Creature\\Thunderaan\\VO_703_Thunderaan_07_M.ogg",
+		["text"] = "Do not oppose me.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Thunderaan\\VO_703_Thunderaan_08_M.ogg",
+		["text"] = "Behold my power.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Thunderaan\\VO_703_Thunderaan_10_M.ogg",
+		["text"] = "I am everywhere.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Thunderaan\\VO_703_Thunderaan_11_M.ogg",
+		["text"] = "The wind is at your back.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\OutlawRogue Artifact\\VO_Thunderaan_Custom_01.ogg",
+		["text"] = "I have no doubt you will resolve this issue swiftly.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\OutlawRogue Artifact\\VO_Thunderaan_Custom_02.ogg",
+		["text"] = "The winds carry my will to the far corners of this plane.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\OutlawRogue Artifact\\VO_Thunderaan_Custom_03.ogg",
+		["text"] = "Divided, we are scattered to the winds. But united, we are a cyclone of power.",
+	},
+};
+	--Outlaw Rogue--
+thunderfuryIDList = {
 		--Thunderfury, Hallowed Blade of the Windlord--
 		[881] = true,	--blue--
 		[882] = true,	--jade--
@@ -1832,14 +2314,102 @@ local dreadbladeIDList = {
 };
 
 --Assassination Rogue--
-local kingslayerSounds = {
+kingslayerSounds = {
+	--[[{
+		["file"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN01.ogg",
+		["text"] = "Chaos!",
+	},]]	--old kiljaeden
+	--[[{
+		["file"] = "Sound\\Creature\\KilJaeden\\KILJAEDENKILL02.ogg",
+		["text"] = "Anakh Kyree!",
+	},]]	--old kiljaeden
+	--[[{
+		["file"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN02.ogg",
+		["text"] = "Destruction!",
+	},]]	--old kiljaeden
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Sound\\Creature\\KilJaeden\\VO_703_KilJaeden_15.ogg",
+		["text"] = "Pathetic.",
+	},
+	--[[{
+		["file"] = "Sound\\Creature\\KilJaeden\\KILJAEDEN03.ogg",
+		["text"] = "Oblivion!",
+	},]]	--old kiljaeden
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_02.ogg",
+		["text"] = "Your fate is sealed.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_03.ogg",
+		["text"] = "You will perish with your world!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_04.ogg",
+		["text"] = "Chaos will consume you.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_05.ogg",
+		["text"] = "I will feed upon your ashes.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_06.ogg",
+		["text"] = "The fel fuels me!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_08.ogg",
+		["text"] = "Still you resist...",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_09.ogg",
+		["text"] = "Suffer!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_15.ogg",
+		["text"] = "Who will save you now?",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_16.ogg",
+		["text"] = "Fall before your master.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_17.ogg",
+		["text"] = "Death reigns upon you.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_18.ogg",
+		["text"] = "Obliteration beckons!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_20.ogg",
+		["text"] = "Still you fight us, still you deny the inevitable.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_21.ogg",
+		["text"] = "Your incessant resistance is maddening.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_25.ogg",
+		["text"] = "Give in to your fears... your desires...",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_26.ogg",
+		["text"] = "Face your destiny!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_27.ogg",
+		["text"] = "Your defiance is futile.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_28.ogg",
+		["text"] = "Your souls will soon know oblivion!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\HavocDH Artifact\\VO_KilJaeden_Custom_31.ogg",
+		["text"] = "Give in.",
 	},
 };
 	--Assassination Rogue--
-local kingslayerIDList = {
+kingslayerIDList = {
 		--The Kingslayers--
 		[228] = true,	--red--
 		[115] = true,	--purple--
@@ -1877,17 +2447,90 @@ local kingslayerIDList = {
 		[612] = true,	--yellow--
 };
 
+}
 
-
+local ShamanArtifacts = {
 --Elemental Shaman--
-local fistofstormsSounds = {
+fistofstormsSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_ThunderKing_Alliance_Blast_01.OGG",
+		["text"] = "The unworthy have not yet learned of my power.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\EleShaman Artifact\\VO_ThunderKing_Custom_01.ogg",
+		["text"] = "Add my strength to your own.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\EleShaman Artifact\\VO_ThunderKing_Custom_02.ogg",
+		["text"] = "You have made a grave mistake.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_CHARGE_01.OGG",
+		["text"] = "My power cannot be contained.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_CHARGE_02.OGG",
+		["text"] = "You have sealed your doom.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\EleShaman Artifact\\VO_ThunderKing_Custom_03.ogg",
+		["text"] = "All who look upon my might will tremble and submit.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_KILLPLAYER_01.OGG",
+		["text"] = "Miniscule.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_KILLPLAYER_02.OGG",
+		["text"] = "Unworthy.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_KILLPLAYER_04.OGG",
+		["text"] = "Lightning strikes!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_KILLPLAYER_05.OGG",
+		["text"] = "Kneel before me.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\EleShaman Artifact\\VO_ThunderKing_Custom_04.ogg",
+		["text"] = "Witness your folly!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\EleShaman Artifact\\VO_ThunderKing_Custom_05.ogg",
+		["text"] = "I will crush you myself.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\EleShaman Artifact\\VO_ThunderKing_Custom_06.ogg",
+		["text"] = "Let us see how you fair against lightning.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\EleShaman Artifact\\VO_ThunderKing_Custom_07.ogg",
+		["text"] = "I wield the power of the heavens!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_SPELL_01.OGG",
+		["text"] = "Kneel!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_SPELL_01b.OGG",
+		["text"] = "Die!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_SPELL_01c.OGG",
+		["text"] = "Submit!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_SPELL_02.OGG",
+		["text"] = "Lightning, seek my foes!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Leishen\\VO_52_TKR_LEI_SHEN_SPELL_03.OGG",
+		["text"] = "Wind, heed my call!",
 	},
 };
 	--Elemental Shaman--
-local fistofstormsIDList = {
+fistofstormsIDList = {
 	--The Fist of Ra-den--
 	[113] = true,	--blue--
 	[673] = true,	--pink--
@@ -1923,64 +2566,150 @@ local fistofstormsIDList = {
 	[897] = true,	--green--
 	[898] = true,	--orange--
 	[899] = true,	--lavender--
-}
+};
 
 --Enhancement Shaman--
-local doomhammerSounds = {
+doomhammerOH1Sounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Sound\\Creature\\Fury\\VO_60_FR_FURNACE_FURY_AGGRO.ogg",
+		["text"] = "I will reduce you all to ashes...",
+	},
+	{
+		["file"] = "Sound\\Creature\\Fury\\VO_60_FR_FURNACE_FURY_KILL_1.ogg",
+		["text"] = "I consume all...",
+	},
+	{
+		["file"] = "Sound\\Creature\\Fury\\VO_60_FR_FURNACE_FURY_KILL_3.ogg",
+		["text"] = "Burn...",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\EnhShaman Artifact\\VO_FR_FURNACE_FURY_Custom_01.ogg",
+		["text"] = "Burn unto ash...",
+	},
+	{
+		["file"] = "Sound\\Creature\\Fury\\VO_60_FR_FURNACE_FURY_SPELL_1.ogg",
+		["text"] = "Inferno...",
+	},
+	{
+		["file"] = "Sound\\Creature\\Fury\\VO_60_FR_FURNACE_FURY_SPELL_2.ogg",
+		["text"] = "Drown in fire...",
+	},
+	{
+		["file"] = "Sound\\Creature\\Fury\\VO_60_FR_FURNACE_FURY_SPELL_3.ogg",
+		["text"] = "My flames will lick the flesh from your bones...",
+	},
+	{
+		["file"] = "Sound\\Creature\\Fury\\VO_60_FR_FURNACE_FURY_SPELL_4.ogg",
+		["text"] = "Suffer...",
+	},
+};
+--Enhancement Shaman--
+doomhammerOH2Sounds = {
+	{
+		["file"] = "Sound\\Creature\\Thunderaan\\VO_703_Thunderaan_07_M.ogg",
+		["text"] = "Do not oppose me.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Thunderaan\\VO_703_Thunderaan_08_M.ogg",
+		["text"] = "Behold my power.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Thunderaan\\VO_703_Thunderaan_10_M.ogg",
+		["text"] = "I am everywhere.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Thunderaan\\VO_703_Thunderaan_11_M.ogg",
+		["text"] = "The wind is at your back.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\OutlawRogue Artifact\\VO_Thunderaan_Custom_01.ogg",
+		["text"] = "I have no doubt you will resolve this issue swiftly.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\OutlawRogue Artifact\\VO_Thunderaan_Custom_02.ogg",
+		["text"] = "The winds carry my will to the far corners of this plane.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\OutlawRogue Artifact\\VO_Thunderaan_Custom_03.ogg",
+		["text"] = "Divided, we are scattered to the winds. But united, we are a cyclone of power.",
 	},
 };
 
 	--Enhancement Shaman--
-local doomhammerIDList = {
+doomhammer1IDList = {
 		--Doomhammer--
 		[117] = true,	--white--
 		[297] = true,	--red--
 		[302] = true,	--yellow--
 		[303] = true,	--pink--
 		
+		--Blackhand's Fate--
+		[299] = true,	--orange--
+		[307] = true,	--light blue--
+		[308] = true,	--green--
+		[309] = true,	--pink--
+};
+	--Enhancement Shaman--
+doomhammer2IDList = {
 		--Stormbringer--
 		[298] = true,	--light blue--
 		[304] = true,	--yellow--
 		[305] = true,	--green--
 		[306] = true,	--red--
 		
-		--Legion's Doom--
-		[310] = true,	--green--
-		[300] = true,	--light blue--
-		[311] = true,	--orange--
-		[312] = true,	--purple--
-		
-		--Blackhand's Fate--
-		[299] = true,	--orange--
-		[307] = true,	--light blue--
-		[308] = true,	--green--
-		[309] = true,	--pink--
-		
 		--Typhoon--
 		[301] = true,	--light blue--
 		[313] = true,	--gold--
 		[314] = true,	--green--
 		[315] = true,	--grey--
-		
-		--Zandarl Champion--
-		[880] = true,	--light blue--
-		[878] = true,	--orange--
-		[879] = true,	--purple--
-		[877] = true,	--blue--
 };
 
+
 --Restoration Shaman--
-local sharasdalSounds = {
+sharasdalSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_01.ogg",
+		["text"] = "A pity.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_02.ogg",
+		["text"] = "Such insolence.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_03.ogg",
+		["text"] = "My temper grows short.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_04.ogg",
+		["text"] = "Do not ask for mercy.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_05.ogg",
+		["text"] = "Enough.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_06.ogg",
+		["text"] = "Imperfection must be swept away.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_07.ogg",
+		["text"] = "*Sigh* I am unimpressed.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_08.ogg",
+		["text"] = "Inexcusable",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_09.ogg",
+		["text"] = "Unfortunate.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\RestoShaman Artifact\\VO_AZSHARA_Custom_10.ogg",
+		["text"] = "I have no time for such diversions.",
 	},
 };
 	--Restoration Shaman--
-local sharasdalIDList = {
+sharasdalIDList = {
 	--Sharas'dal, Scepter of the Tides--
 	[116] = true,	--light blue--
 	[772] = true,	--green--
@@ -2016,18 +2745,145 @@ local sharasdalIDList = {
 	[925] = true,
 	[927] = true,
 	[928] = true,
+};
+
+
 }
 
-
---Affliction Warlock--
-local ulthaleshSounds = {
+--bits and pieces of Shaman Artifact. To be continued.
+--[[--Enhancement Shaman--
+doomhammerMH1Sounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},
 };
+
+
+	--Enhancement Shaman--
+doomhammerIDList = {
+		--Legion's Doom--
+		[310] = true,	--green--
+		[300] = true,	--light blue--
+		[311] = true,	--orange--
+		[312] = true,	--purple--
+		
+		--Zandalar Champion--
+		[880] = true,	--light blue--
+		[878] = true,	--orange--
+		[879] = true,	--purple--
+		[877] = true,	--blue--
+};
+]]
+
+local WarlockArtifacts = {
+
+--Affliction Warlock--
+ulthalesh1Sounds = {
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Ariden_Custom_01.ogg",
+		["text"] = "Do not think you have won.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Ariden_Custom_02.ogg",
+		["text"] = "Souls of the dead, aid your master!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Ariden_Custom_03.ogg",
+		["text"] = "It calls to souls long dead.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Ariden_Custom_04.ogg",
+		["text"] = "Feel the wrath of the world ender!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Ariden_Custom_05.ogg",
+		["text"] = "Ulthalesh feasts tonight!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Ariden_Custom_06.ogg",
+		["text"] = "If you so thirst for the power of the Deadwind Harvester, then I will show it to you myself.",
+	},
+};
+--Affliction Warlock--
+ulthalesh2Sounds = {
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_01.ogg",
+		["text"] = "You will be consumed!",
+	},	
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_02.ogg",
+		["text"] = "Ulthalesh feasts!",
+	},	
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_03.ogg",
+		["text"] = "You will join the harvested!",
+	},	
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_04.ogg",
+		["text"] = "Ulthalesh will devour you!",
+	},	
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_05.ogg",
+		["text"] = "All who have tried to tame Ulthalesh have been consumed... You will fair no better!",
+	},	
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_06.ogg",
+		["text"] = "Fool. You would think to succeed where even I, chosen of Sargeras, had failed?",
+	},	
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_07.ogg",
+		["text"] = "How quaint.",
+	},	
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_08.ogg",
+		["text"] = "Do not fret. Through Ulthalesh, you will be so much more in death than you were in life.",
+	},	
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\AffLock Artifact\\VO_Sataiel_Custom_09.ogg",
+		["text"] = "Such poor souls.",
+	},	
+};
 	--Affliction Warlock--
-local ulthaleshIDList = {
+ulthalesh1IDList = {
+		--Deadwind Harvester--
+		[294] = true,	--yellow--
+		[320] = true,	--green--
+		[321] = true,	--purple--
+		[322] = true,	--red--
+		
+		--Hand of the Afflicted--
+		[334] = true,	--red--
+		[332] = true,	--green--
+		[333] = true,	--purple--
+		[316] = true,	--grey--
+		
+		--Soul Siphon--
+		[329] = true,	--green--
+		[317] = true,	--grey--
+		[330] = true,	--purple--
+		[331] = true,	--red--
+		
+		--Death's Hand--
+		[319] = true,	--teal--
+		[323] = true,	--orange--
+		[325] = true,	--red--
+		[324] = true,	--purple--
+		
+		--Spine of the Condemned--
+		[969] = true,	--green--
+		[970] = true,	--orange--
+		[971] = true,	--purple--
+		[972] = true,	--red--
+		
+		--Fate's End--
+		[328] = true,	--pink--
+		[326] = true,	--green--
+		[327] = true,	--blue--
+		[318] = true,	--red--
+};
+
+ulthalesh2IDList = {
 		--Deadwind Harvester--
 		[294] = true,	--yellow--
 		[320] = true,	--green--
@@ -2066,14 +2922,14 @@ local ulthaleshIDList = {
 };
 
 --Demonology Warlock--
-local skullofmanariSounds = {
+skullofmanariSounds = {
 	{
 		["file"] = "soundpath",
 		["text"] = "text1",
 	},
 };
 	--Demonology Warlock--
-local skullofmanariIDList = {
+skullofmanariIDList = {
 	--Skull of the Man'ari--
 	[811] = true,	--purple--
 	[810] = true,	--jade--
@@ -2112,14 +2968,46 @@ local skullofmanariIDList = {
 };
 
 --Destruction Warlock--
-local sargerasSounds = {
+sargerasSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_01.ogg",
+		["text"] = "The darkness... it flows within me... it seeps from every vein...",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_02.ogg",
+		["text"] = "Gaze into the eyes of the void!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_03.ogg",
+		["text"] = "Peer into the gateway I command! I shall deliver you to your death!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_04.ogg",
+		["text"] = "Your soul shall serve me.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_05.ogg",
+		["text"] = "You bend to my will.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_06.ogg",
+		["text"] = "I am the herald of the end!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_07.ogg",
+		["text"] = "Into the abyss!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_08.ogg",
+		["text"] = "Feel the void's cold embrace...",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_09.ogg",
+		["text"] = "Witness the dark majesty of the void!",
 	},
 };
 	--Destruction Warlock--
-local sargerasIDList = {
+sargerasIDList = {
 		--Scepter of Sargeras--
 		[188] = true,	--purple--
 		[189] = true,	--blue--
@@ -2157,17 +3045,63 @@ local sargerasIDList = {
 		[204] = true,	--purple--
 };
 
+};
 
+local WarriorArtifacts = {
 
 --Arms Warrior--
-local stromkarSounds = {
+stromkarSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_HowlingFjordWhisper01.ogg",
+		["text"] = "They are coming for you.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_HowlingFjordWhisper02.ogg",
+		["text"] = "Give in to your fear.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_HowlingFjordWhisper03.ogg",
+		["text"] = "Kill them all... before they kill you.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_HowlingFjordWhisper04.ogg",
+		["text"] = "They have turned against you. Now... take your revenge.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_HowlingFjordWhisper05.ogg",
+		["text"] = "Tell yourself again that these are not truly your friends.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_HowlingFjordWhisper06.ogg",
+		["text"] = "There is no escape. Not in this life. Not in the next.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_HowlingFjordWhisper07.ogg",
+		["text"] = "You are a pawn of forces unseen.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_HowlingFjordWhisper08.ogg",
+		["text"] = "It was your fault.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_Whisper01.ogg",
+		["text"] = "You will be alone in the end.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_Whisper02.ogg",
+		["text"] = "Trust is your weakness.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_Whisper01.ogg",
+		["text"] = "Hope is an illusion.",
+	},
+	{
+		["file"] = "Sound\\Creature\\YoggSaron\\AK_YoggSaron_Whisper01.ogg",
+		["text"] = "All that you know will fade.",
 	},
 };
 	--Arms Warrior--
-local stromkarIDList = {
+stromkarIDList = {
 	--Stromkar, the Warbreaker--
 	[295] = true,	--blue--
 	[791] = true,	--green--
@@ -2206,14 +3140,163 @@ local stromkarIDList = {
 };
 
 --Fury Warrior--
-local warswordsSounds = {
+warswords1Sounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Sound\\Creature\\Odyn\\VO_70_Odyn_06.ogg",
+		["text"] = "My power is beyond anything you have yet faced!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Odyn\\VO_70_Odyn_10.ogg",
+		["text"] = "An agile mind is as deadly as the sharpest weapon.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FuryWar Artifact\\VO_Odyn_Custom_01.ogg",
+		["text"] = "Fight for glory!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FuryWar Artifact\\VO_Odyn_Custom_02.ogg",
+		["text"] = "Have at thee!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Odyn\\VO_71_Odyn_13_M.ogg",
+		["text"] = "Behold the power granted me by the Titans!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Odyn\\VO_71_Odyn_15_M.ogg",
+		["text"] = "Feel the fury of the storm!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Odyn\\VO_71_Odyn_28_M.ogg",
+		["text"] = "Champions must show cleverness as well as might!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FuryWar Artifact\\VO_Odyn_Custom_03.ogg",
+		["text"] = "Show them how a true champion fights.",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FuryWar Artifact\\VO_Odyn_Custom_04.ogg",
+		["text"] = "Show them the meaning of honorable battle!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FuryWar Artifact\\VO_Odyn_Custom_05.ogg",
+		["text"] = "Eradicate this filth!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Odyn\\VO_703_Odyn_01.ogg",
+		["text"] = "Bring us tales of victory.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Odyn\\VO_703_Odyn_02.ogg",
+		["text"] = "May your battles be glorious.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Odyn\\VO_703_Odyn_13.ogg",
+		["text"] = "Fight on, Valarjar!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Odyn\\VO_703_Odyn_32.ogg",
+		["text"] = "Behold! I bless you with my power!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FuryWar Artifact\\VO_Odyn_Custom_06.ogg",
+		["text"] = "Destroy this menace!",
+	},
+};
+
+warswords2Sounds = {
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FuryWar Artifact\\VO_Helya_Custom_01.ogg",
+		["text"] = "Such insolence!",
+	},
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\FuryWar Artifact\\VO_Helya_Custom_02.ogg",
+		["text"] = "Time to die.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_70_Helya_17.ogg",
+		["text"] = "You will pay for that!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_70_Helya_18.ogg",
+		["text"] = "I am losing my patience!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_70_Helya_22.ogg",
+		["text"] = "Embrace your fate, fools!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_70_Helya_23.ogg",
+		["text"] = "Your fate rains down!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_70_Helya_24.ogg",
+		["text"] = "Begone to the next life.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_70_Helya_25.ogg",
+		["text"] = "Your soul will find no shelter here.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_70_Helya_30.ogg",
+		["text"] = "An eternity of agony awaits you.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_71_Helya_04_F.ogg",
+		["text"] = "Your souls belong to me.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_71_Helya_13_F.ogg",
+		["text"] = "Let the shadows take you.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_71_Helya_14_F.ogg",
+		["text"] = "Darkness upon your soul.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Helya\\VO_71_Helya_25_F.ogg",
+		["text"] = "Breathe deep and despair!",
 	},
 };
 	--Fury Warrior--
-local warswordsIDList = {
+warswords1IDList = {
+	--Warswords of the Valarjar--
+	[296] = true,	--yellow--
+	[654] = true,	--red--
+	[655] = true,	--purple--
+	[656] = true,	--green--
+	
+	--Arm of the Dragonrider--
+	[657] = true,	--yellow--
+	[660] = true,	--red--
+	[659] = true,	--purple--
+	[658] = true,	--green--
+	
+	--Valormaw--
+	[669] = true,	--yellow--
+	[670] = true,	--green--
+	[671] = true,	--purple--
+	[672] = true,	--pink--
+	
+	--Stormbreath--
+	[661] = true,	--blue--
+	[662] = true,	--green--
+	[663] = true,	--yellow--
+	[664] = true,	--red--
+	
+	--Helya's Gaze--
+	[665] = true,	--light blue--
+	[666] = true,	--green--
+	[667] = true,	--purple--
+	[668] = true,	--pink--
+	
+	--Dragonslayer's Edge--
+	[964] = true,	--yelow--
+	[962] = true,	--orange--
+	[961] = true,	--light blue--
+	[963] = true,	--pink--
+};
+	--Fury Warrior--
+warswords2IDList = {
 	--Warswords of the Valarjar--
 	[296] = true,	--yellow--
 	[654] = true,	--red--
@@ -2252,14 +3335,34 @@ local warswordsIDList = {
 };
 
 --Protection Warrior--
-local earthwarderSounds = {
+earthwarderSounds = {
 	{
-		["file"] = "soundpath",
-		["text"] = "text1",
+		["file"] = "Sound\\Creature\\Deathwing\\VO_53_Deathwing_Legendary_01.OGG",
+		["text"] = "I shall tear this world apart!",
 	},
+	{
+		["file"] = "Sound\\Creature\\Deathwing\\VO_53_Deathwing_Legendary_02.OGG",
+		["text"] = "Your tenacity is admiral, but pointless!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Deathwing\\VO_53_Deathwing_Legendary_03.OGG",
+		["text"] = "Your efforts are insignificant!",
+	},
+	{
+		["file"] = "Sound\\Creature\\Deathwing\\VO_53_Deathwing_Legendary_04.OGG",
+		["text"] = "There is no shelter from my fury.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Deathwing\\VO_53_Deathwing_Legendary_05.OGG",
+		["text"] = "Your armor means nothing. Your faith, even less.",
+	},
+	{
+		["file"] = "Sound\\Creature\\Deathwing\\VO_DS_DEATHWING_MAELSTROMSLAY_01.OGG",
+		["text"] = "There is no hope. No future. All life is doomed.",
+	},	--there aren't a lot of fitting deathwing sounds. Deathwing in general isn't a very good choice...
 };
 	--Protection Warrior--
-local earthwarderIDList = {
+earthwarderIDList = {
 	--Scale of the Earthwarder--
 	[66] = true,	--red--
 	[147] = true,	--green--
@@ -2272,6 +3375,21 @@ local earthwarderIDList = {
 	[149] = true,	--blue--
 	[151] = true,	--purple--
 	
+	--Last Breath of the Worldbreaker--
+	[159] = true,	--orange--
+	[157] = true,	--blue--
+	[158] = true,	--green--
+	[160] = true,	--purple--
+	[160] = true,	--purple--
+};
+
+earthwarder2Sounds = {
+	{
+		["file"] = "soundpath",
+		["text"] = "text1",
+	},
+};
+earthwarder2IDList = {
 	--Unbroken Stand--
 	[164] = true,	--yellow--
 	[162] = true,	--green--
@@ -2289,45 +3407,215 @@ local earthwarderIDList = {
 	[862] = true,	--blue--
 	[863] = true,	--green--
 	[864] = true,	--red--
-	
-	--Last Breath of the Worldbreaker--
-	[159] = true,	--orange--
-	[157] = true,	--blue--
-	[158] = true,	--green--
-	[160] = true,	--purple--
-	[160] = true,	--purple--
 };
 
-
+}
 
 
 local function incrementSound ()
     ArtifactWhispersSettings.nextSound = ArtifactWhispersSettings.nextSound + 1;
-	if select(3, UnitClass("player")) == 2 then --paladin
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 70 then --ret
-			if goodashbringerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 12) then
+	if select(3, UnitClass("player")) == 6 then --death knight
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 251 then --frost
+			if DeathKnightArtifacts.frostmourne1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 13) then
 				ArtifactWhispersSettings.nextSound = 1;
 			end
-			if corruptedashbringerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 17) then
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 250 then --blood
+			if DeathKnightArtifacts.mawofthedamnedIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 4) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 252 then --unholy
+			if DeathKnightArtifacts.apocalypseIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 5) then
 				ArtifactWhispersSettings.nextSound = 1;
 			end
 		end
 	end
 	
+	if select(3, UnitClass("player")) == 12 then --demon hunter
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 577 then --havoc
+			if DemonHunterArtifacts.twinblades1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 33) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 11 then --druid
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 104 then --guardian
+			if DruidArtifacts.clawsofursocIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 3) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+			if DruidArtifacts.corruptedursocIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 8) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 3 then --hunter
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 253 then --beast mastery
+			if HunterArtifacts.titanstrikeIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 6) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 8 then --mage
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 63 then --fire
+			if MageArtifacts.felomelornIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 11) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 10 then --monk
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 270 then --mistweaver
+			if MonkArtifacts.sheilunIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 9) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+			if MonkArtifacts.chijisheilunIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 9) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+			if MonkArtifacts.corruptedsheilunIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 24) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+			if MonkArtifacts.yulonsheilunIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 7) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 269 then --windwalker
+			if MonkArtifacts.fistoftheheavensOHIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 6) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 2 then --paladin
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 70 then --ret
+			if PaladinArtifacts.goodashbringerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 17) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+			if PaladinArtifacts.corruptedashbringerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 12) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 5 then --priest
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 257 then --holy
+			if PriestArtifacts.tuureIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 4) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 4 then --rogue
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 260 then --outlaw
+			if RogueArtifacts.thunderfuryIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 7) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 259 then --assassination
+			if RogueArtifacts.kingslayerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 19) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 7 then --shaman
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 262 then --elemental
+			if ShamanArtifacts.fistofstormsIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 19) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 263 then --enhancement
+			if ShamanArtifacts.doomhammer1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 8) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+			
+			if ShamanArtifacts.doomhammer2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 7) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 264 then --restoration
+			if ShamanArtifacts.sharasdalIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 10) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 9 then --warlock
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 265 then --affliction
+			if WarlockArtifacts.ulthalesh1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 6) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 267 then --destruction
+			if WarlockArtifacts.sargerasIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 9) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 1 then --warrior
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 71 then --arms
+			if WarriorArtifacts.stromkarIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 12) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 72 then --fury
+			if WarriorArtifacts.warswords1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 15) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end
+	
+--[[if select(3, UnitClass("player")) == NUMBER then --CLASS
+		if select(1, GetSpecializationInfo(GetSpecialization())) == NUMBER then --SPEC
+			if IDLIST[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > MAX_NUM_OBJ_IN_TABLE) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
+	end]]
+end
+
+local function incrementSecondarySound ()
+    ArtifactWhispersSettings.nextSecondarySound = ArtifactWhispersSettings.nextSecondarySound + 1;
 	if select(3, UnitClass("player")) == 6 then --death knight
 		if select(1, GetSpecializationInfo(GetSpecialization())) == 251 then --frost
-			if frostmourneIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 13) then
-				ArtifactWhispersSettings.nextSound = 1;
+			if DeathKnightArtifacts.frostmourne2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSecondarySound > 13) then
+				ArtifactWhispersSettings.nextSecondarySound = 1;
 			end
 		end
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 250 then --blood
-			if mawofthedamnedIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 4) then
-				ArtifactWhispersSettings.nextSound = 1;
+	end
+	
+	if select(3, UnitClass("player")) == 12 then --demon hunter
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 577 then --havoc
+			if DemonHunterArtifacts.twinblades2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSecondarySound > 6) then
+				ArtifactWhispersSettings.nextSecondarySound = 1;
 			end
 		end
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 252 then --unholy
-			if apocalypseIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 5) then
-				ArtifactWhispersSettings.nextSound = 1;
+	end
+	
+	if select(3, UnitClass("player")) == 10 then --monk
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 269 then --windwalker
+			if MonkArtifacts.fistoftheheavensMHIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSecondarySound > 3) then
+				ArtifactWhispersSettings.nextSecondarySound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 9 then --warlock
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 265 then --affliction
+			if WarlockArtifacts.ulthalesh2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSecondarySound > 9) then
+				ArtifactWhispersSettings.nextSecondarySound = 1;
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 1 then --warrior
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 72 then --fury
+			if WarriorArtifacts.warswords2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSecondarySound > 13) then
+				ArtifactWhispersSettings.nextSecondarySound = 1;
 			end
 		end
 	end
@@ -2335,16 +3623,330 @@ end
 
 
 
+
 SoundService.playNextSound = function()
-	if select(3, UnitClass("player")) == 2 then	--paladin
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 70 then	--ret
-			if goodashbringerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+	
+	if select(3, UnitClass("player")) == 6 then --death knight
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 251 then --frost
+			if DeathKnightArtifacts.frostmourne1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(DeathKnightArtifacts.frostmourneMHSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = DeathKnightArtifacts.frostmourneMHSounds[nextSound].text
+							local sender = "Frostreaper"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSound();
+					end
+			end
+			if DeathKnightArtifacts.frostmourne2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
+				local nextSecondarySound = ArtifactWhispersSettings.nextSecondarySound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(DeathKnightArtifacts.frostmourneOHSounds[nextSecondarySound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = DeathKnightArtifacts.frostmourneOHSounds[nextSecondarySound].text
+							local sender = "Icebringer"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSecondarySound();
+					end
+			end
+		end
+		
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 250 then --blood
+			if DeathKnightArtifacts.mawofthedamnedIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
 				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
 				local nextSound = ArtifactWhispersSettings.nextSound;
 					if (ShouldPlaySound == 1) then
-						PlaySoundFile(goodashbringerSounds[nextSound].file, "Dialog");
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(DeathKnightArtifacts.mawofthedamnedSounds[nextSound].file, "Dialog");
+						end
 						if (ArtifactWhispersSettings.showWhispers == true) then
-							local msg = goodashbringerSounds[nextSound].text
+							local msg = DeathKnightArtifacts.mawofthedamnedSounds[nextSound].text
+							local sender = "Maw of the Damned"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSound();
+					end
+			end
+		end
+		
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 252 then --unholy
+			if DeathKnightArtifacts.apocalypseIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(DeathKnightArtifacts.apocalypseSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = DeathKnightArtifacts.apocalypseSounds[nextSound].text
+							local sender = "Apocalypse"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSound();
+					end
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 12 then	--demon hunter
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 577 then --havoc
+			if DemonHunterArtifacts.twinbladesIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+						PlaySoundFile(DemonHunterArtifacts.twinbladesmuramasSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = DemonHunterArtifacts.twinbladesmuramasSounds[nextSound].text
+							local sender = "Muramus"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSound();
+					end
+			end
+			if DemonHunterArtifacts.twinbladesIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);	--need to change to dual percent
+				local nextSecondarySound = ArtifactWhispersSettings.nextSecondarySound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+						PlaySoundFile(DemonHunterArtifacts.twinbladesverusSounds[nextSecondarySound].file, "Dialog");
+					end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = DemonHunterArtifacts.twinbladesverusSounds[nextSecondarySound].text
+							local sender = "Verus"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSecondarySound();
+					end
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 11 then	--druid
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 104 then --guardian
+			if DruidArtifacts.clawsofursocIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+						PlaySoundFile(DruidArtifacts.clawsofursocSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = DruidArtifacts.clawsofursocSounds[nextSound].text
+							local sender = "Ursoc"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSound();
+					end
+			end
+			if DruidArtifacts.corruptedursocIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(DruidArtifacts.corruptedursocSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = DruidArtifacts.corruptedursocSounds[nextSound].text
+							local sender = "Ursoc"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 3 then	--hunter
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 253 then --beast mastery
+			if HunterArtifacts.titanstrikeIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(HunterArtifacts.titanstrikeSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = HunterArtifacts.titanstrikeSounds[nextSound].text
+							local sender = "Titanstrike"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 8 then	--mage
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 63 then --fire
+			if MageArtifacts.felomelornIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(MageArtifacts.felomelornSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = MageArtifacts.felomelornSounds[nextSound].text
+							local sender = "Felo'melorn"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+	end
+	
+	if select(3, UnitClass("player")) == 10 then	--monk
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 270 then --mistweaver
+			if MonkArtifacts.sheilunIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(MonkArtifacts.sheilunSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = MonkArtifacts.sheilunSounds[nextSound].text
+							local sender = "The Mists"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+			if MonkArtifacts.chijisheilunIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(MonkArtifacts.chijisheilunSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = MonkArtifacts.chijisheilunSounds[nextSound].text
+							local sender = "The Mists of Hope"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+			if MonkArtifacts.corruptedsheilunIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(MonkArtifacts.corruptedsheilunSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = MonkArtifacts.corruptedsheilunSounds[nextSound].text
+							local sender = "The Mists of Torment"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+			if MonkArtifacts.yulonsheilunIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(MonkArtifacts.yulonsheilunSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = MonkArtifacts.yulonsheilunSounds[nextSound].text
+							local sender = "The Mists of Wisdom"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 269 then --windwalker
+			if MonkArtifacts.fistoftheheavensMHIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(MonkArtifacts.fistoftheheavensMHSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = MonkArtifacts.fistoftheheavensMHSounds[nextSound].text
+							local sender = "Al'burq"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+			if MonkArtifacts.fistoftheheavensOHIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
+				local nextSecondarySound = ArtifactWhispersSettings.nextSecondarySound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(MonkArtifacts.fistoftheheavensOHSounds[nextSecondarySound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = MonkArtifacts.fistoftheheavensOHSounds[nextSecondarySound].text
+							local sender = "Alra'ed"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSecondarySound();
+					end
+			end
+		end
+	end
+
+	if select(3, UnitClass("player")) == 2 then	--paladin
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 70 then	--ret
+			if PaladinArtifacts.goodashbringerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(PaladinArtifacts.goodashbringerSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = PaladinArtifacts.goodashbringerSounds[nextSound].text
 							local sender = "Ashbringer"
 							local info = ChatTypeInfo["MONSTER_WHISPER"]
 							local body = CHAT_WHISPER_GET:format(sender) .. msg
@@ -2354,13 +3956,15 @@ SoundService.playNextSound = function()
 						incrementSound();
 					end
 			end
-			if corruptedashbringerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+			if PaladinArtifacts.corruptedashbringerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
 				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
 				local nextSound = ArtifactWhispersSettings.nextSound;
 					if (ShouldPlaySound == 1) then
-						PlaySoundFile(corruptedashbringerSounds[nextSound].file, "Dialog");
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(PaladinArtifacts.corruptedashbringerSounds[nextSound].file, "Dialog");
+						end
 						if (ArtifactWhispersSettings.showWhispers == true) then
-							local msg = corruptedashbringerSounds[nextSound].text
+							local msg = PaladinArtifacts.corruptedashbringerSounds[nextSound].text
 							local sender = "An Unknown Voice"
 							local info = ChatTypeInfo["MONSTER_WHISPER"]
 							local body = CHAT_WHISPER_GET:format(sender) .. msg
@@ -2371,92 +3975,285 @@ SoundService.playNextSound = function()
 					end
 			end
 		end
-			
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 65 then	--holy
-		
+	end
+	
+	if select(3, UnitClass("player")) == 5 then	--priest
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 257 then --holy
+			if PriestArtifacts.tuureIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(PriestArtifacts.tuureSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = PriestArtifacts.tuureSounds[nextSound].text
+							local sender = "T'uure"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
 		end
+	end
 		
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 66 then --prot
-		
+	if select(3, UnitClass("player")) == 4 then	--rogue
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 260 then --outlaw
+			if RogueArtifacts.thunderfuryIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(RogueArtifacts.thunderfurySounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = RogueArtifacts.thunderfurySounds[nextSound].text
+							local sender = "Thunderfury"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 259 then --assassination
+			if RogueArtifacts.kingslayerIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(RogueArtifacts.kingslayerSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = RogueArtifacts.kingslayerSounds[nextSound].text
+							local sender = "An Unknown Voice"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
 		end
 	end
 	
+	if select(3, UnitClass("player")) == 7 then	--shaman
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 262 then --elemental
+			if ShamanArtifacts.fistofstormsIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(ShamanArtifacts.fistofstormsSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = ShamanArtifacts.fistofstormsSounds[nextSound].text
+							local sender = "An Unknown Voice"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 263 then --enhancement
+			if ShamanArtifacts.doomhammer1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(ShamanArtifacts.doomhammerOH1Sounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = ShamanArtifacts.doomhammerOH1Sounds[nextSound].text
+							local sender = "Fury of Fire"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+			if ShamanArtifacts.doomhammer2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(ShamanArtifacts.doomhammerOH2Sounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = ShamanArtifacts.doomhammerOH2Sounds[nextSound].text
+							local sender = "Fury of Storm"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 264 then --restoration
+			if ShamanArtifacts.sharasdalIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(ShamanArtifacts.sharasdalSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = ShamanArtifacts.sharasdalSounds[nextSound].text
+							local sender = "An Unknown Voice"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+	end
 	
-	if select(3, UnitClass("player")) == 6 then --death knight
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 251 then --frost
-			if frostmourneIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
-				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.FrostDKProbabilityPercent);
+	if select(3, UnitClass("player")) == 9 then	--warlock
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 265 then --affliction
+			if WarlockArtifacts.ulthalesh1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
 				local nextSound = ArtifactWhispersSettings.nextSound;
 					if (ShouldPlaySound == 1) then
-						PlaySoundFile(frostmourneMHSounds[nextSound].file, "Dialog");
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(WarlockArtifacts.ulthalesh1Sounds[nextSound].file, "Dialog");
+						end
 						if (ArtifactWhispersSettings.showWhispers == true) then
-							local msg = frostmourneMHSounds[nextSound].text
-							local sender = "Frostreaper"
+							local msg = WarlockArtifacts.ulthalesh1Sounds[nextSound].text
+							local sender = "Ulthalesh"
 							local info = ChatTypeInfo["MONSTER_WHISPER"]
 							local body = CHAT_WHISPER_GET:format(sender) .. msg
 							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
-							--[[print("|cFFF8B0DEFrostreaper whispers:", frostmourneMHSounds[nextSound].text);]]	--old code, keeping around until rest of code is updated
 						end
 						incrementSound();
 					end
 			end
-			if frostmourneIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
-				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.FrostDKProbabilityPercent);
-				local nextSound = ArtifactWhispersSettings.nextSound;
+			if WarlockArtifacts.ulthalesh2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
+				local nextSecondarySound = ArtifactWhispersSettings.nextSecondarySound;
 					if (ShouldPlaySound == 1) then
-						PlaySoundFile(frostmourneOHSounds[nextSound].file, "Dialog");
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(WarlockArtifacts.ulthalesh2Sounds[nextSecondarySound].file, "Dialog");
+						end
 						if (ArtifactWhispersSettings.showWhispers == true) then
-							local msg = frostmourneOHSounds[nextSound].text
-							local sender = "Icebringer"
+							local msg = WarlockArtifacts.ulthalesh2Sounds[nextSecondarySound].text
+							local sender = "Ulthalesh"
 							local info = ChatTypeInfo["MONSTER_WHISPER"]
 							local body = CHAT_WHISPER_GET:format(sender) .. msg
 							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
-							--[[print("|cFFF8B0DEIcebringer whispers:", frostmourneOHSounds[nextSound].text);]]	--old code, keeping around until rest of code is updated
+						end
+						incrementSecondarySound();
+					end
+			end
+		end
+		
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 267 then --destruction
+			if WarlockArtifacts.sargerasIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(WarlockArtifacts.sargerasSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = WarlockArtifacts.sargerasSounds[nextSound].text
+							local sender = "An Unknown Voice"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
 						end
 						incrementSound();
 					end
 			end
 		end
+	end
 		
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 250 then --blood
-			if mawofthedamnedIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+	if select(3, UnitClass("player")) == 1 then	--warrior
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 71 then --arms
+			if WarriorArtifacts.stromkarIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
 				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
 				local nextSound = ArtifactWhispersSettings.nextSound;
 					if (ShouldPlaySound == 1) then
-						PlaySoundFile(mawofthedamnedSounds[nextSound].file, "Dialog");
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(WarriorArtifacts.stromkarSounds[nextSound].file, "Dialog");
+						end
 						if (ArtifactWhispersSettings.showWhispers == true) then
-							local msg = mawofthedamnedSounds[nextSound].text
-							local sender = "Maw of the Damned whispers"
+							local msg = WarriorArtifacts.stromkarSounds[nextSound].text
+							local sender = "An Unknown Voice"
 							local info = ChatTypeInfo["MONSTER_WHISPER"]
 							local body = CHAT_WHISPER_GET:format(sender) .. msg
 							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
-							--[[print("|cFFF8B0DEMaw of the Damned whispers:", mawofthedamnedSounds[nextSound].text);]]	--old code, keeping around until rest of code is updated
 						end
-						incrementSound();
+					incrementSound();
 					end
 			end
 		end
-		
-		if select(1, GetSpecializationInfo(GetSpecialization())) == 252 then --unholy
-			if apocalypseIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
-				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 72 then --fury
+			if WarriorArtifacts.warswords1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
 				local nextSound = ArtifactWhispersSettings.nextSound;
 					if (ShouldPlaySound == 1) then
-						PlaySoundFile(apocalypseSounds[nextSound].file, "Dialog");
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(WarriorArtifacts.warswords1Sounds[nextSound].file, "Dialog");
+						end
 						if (ArtifactWhispersSettings.showWhispers == true) then
-							local msg = apocalypseSounds[nextSound].text
-							local sender = "Apocalypse"
+							local msg = WarriorArtifacts.warswords1Sounds[nextSound].text
+							local sender = "Odyn's Fury"
 							local info = ChatTypeInfo["MONSTER_WHISPER"]
 							local body = CHAT_WHISPER_GET:format(sender) .. msg
 							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
-							--[[print("|cFFF8B0DEApocalypse whispers:", apocalypseSounds[nextSound].text);]]	--old code, keeping around until rest of code is updated
 						end
-						incrementSound();
+					incrementSound();
+					end
+			end
+			if WarriorArtifacts.warswords2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.DualProbabilityPercent);
+				local nextSecondarySound = ArtifactWhispersSettings.nextSecondarySound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(WarriorArtifacts.warswords2Sounds[nextSecondarySound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = WarriorArtifacts.warswords2Sounds[nextSecondarySound].text
+							local sender = "Helya's Wrath"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSecondarySound();
 					end
 			end
 		end
 	end
 end
-
+	
+	--[[if select(3, UnitClass("player")) == NUMBER then	--CLASS
+		if select(1, GetSpecializationInfo(GetSpecialization())) == NUMBER then --SPEC
+			if IDLIST[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						PlaySoundFile(SOUNDTABLE[nextSound].file, "Dialog");
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = SOUNDTABLE[nextSound].text
+							local sender = "NAME"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+						incrementSound();
+					end
+			end
+		end
+	end]]
+	
 
 ArtifactWhispers.SoundService = SoundService;
