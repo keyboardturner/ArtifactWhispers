@@ -624,45 +624,7 @@ twinbladesverusSounds = {
 	},
 };
 	--Havoc Demon Hunter--
-twinblades1IDList = {
-		--Twinblades of the Deceiver--
-		[26] = true,	--green--
-		[25] = true,	--light blue--
-		[27] = true,	--purple--
-		[38] = true,	--red--
-		
-		--Hand of the Illidari--
-		[30] = true,	--green--
-		[29] = true,	--blue--
-		[31] = true,	--purple--
-		[32] = true,	--red--
-		
-		--Darkenblade--
-		[36] = true,	--red--
-		[34] = true,	--green--
-		[35] = true,	--purple--
-		[33] = true,	--faded red--
-		
-		--Demon's Touch--
-		[43] = true,	--purple--
-		[42] = true,	--green--
-		[41] = true,	--blue--
-		[44] = true,	--yellow--
-		
-		--Flamereaper--
-		[37] = true,	--red--
-		[38] = true,	--green--
-		[39] = true,	--orange--
-		[40] = true,	--purple--
-		
-		--Deathwalker--
-		[982] = true,	--green--
-		[981] = true,	--teal--
-		[983] = true,	--purple--
-		[984] = true,	--red--
-};
-	--Havoc Demon Hunter--
-twinblades2IDList = {
+twinbladesIDList = {
 		--Twinblades of the Deceiver--
 		[26] = true,	--green--
 		[25] = true,	--light blue--
@@ -3434,7 +3396,7 @@ local function incrementSound ()
 	
 	if select(3, UnitClass("player")) == 12 then --demon hunter
 		if select(1, GetSpecializationInfo(GetSpecialization())) == 577 then --havoc
-			if DemonHunterArtifacts.twinblades1IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 33) then
+			if DemonHunterArtifacts.twinbladesIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 33) then
 				ArtifactWhispersSettings.nextSound = 1;
 			end
 		end
@@ -3590,7 +3552,7 @@ local function incrementSecondarySound ()
 	
 	if select(3, UnitClass("player")) == 12 then --demon hunter
 		if select(1, GetSpecializationInfo(GetSpecialization())) == 577 then --havoc
-			if DemonHunterArtifacts.twinblades2IDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSecondarySound > 6) then
+			if DemonHunterArtifacts.twinbladesIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSecondarySound > 6) then
 				ArtifactWhispersSettings.nextSecondarySound = 1;
 			end
 		end
