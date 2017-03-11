@@ -25,34 +25,34 @@ These weapons include:
   + Jokes (Soon™)
 
 **Monk**
-* Mistweaver
-* Windwalker
+* Sheilun
+* Fists of the Heavens
 
 **Paladin**
-* Retribution
+* Ashbringer
   - Corrupted and Non-Corrupted Ashbringer Variants
 
 **Priest**
-* Holy
+* T'uure
 - (Xal'Atath is already in the default game.)
 
 **Rogue**
 * Outlaw
-  - Thunderfury
-* Assassination
+  - Thunderfury skins only
+* The Kingslayers
 
 **Shaman**
-* Elemental
-* Enhancement
-* Restoration
+* The Fist of Ra-den
+* Doomhammer
+* Sharas'dal
 
 **Warlock**
-* Affliction
-* Destruction
+* Ulthalesh
+* Scepter of Sargeras
 
 **Warrior**
-* Arms
-* Fury
+* Strom'kar
+* Warswords of the Valarjar
 
 **Professions**
 * Underlight Angler (Soon™)
