@@ -103,9 +103,8 @@ function SlashCmdList.ARTIFACTWHISPERS(msg, editbox)
 				DualProbabilityPercent = 1/2,
                 nextSound = 1,
 				nextSecondarySound = 1,
+				nextJokeSound = 1,
         };
-	--[[elseif (command == "joke") then
-		ArtifactWhispers.SoundService.playNextSound]]--
 	elseif (command == "info") then
 		print ("|cffefc051Artifact Whispers|r: '/aw percent' controls the percentage. Default is |cff51c0ef1|r (1%) or |cff51c0ef.5|r (.5%) for Dual-Voices.");
 		print ("|cffefc051Artifact Whispers|r: '/aw whispers' controls the whispers. Default is |cff51c0efON|r.");
@@ -113,13 +112,22 @@ function SlashCmdList.ARTIFACTWHISPERS(msg, editbox)
 		print ("|cffefc051Artifact Whispers|r: '/aw reset' will reset all settings to their default. Use this if there is a bug.");
 		print ("|cffefc051Artifact Whispers|r: The volume can be controlled with the dialog slider in the System Sound Options.");
 		if DualProbabilitySpecs[select(1, GetSpecializationInfo(GetSpecialization()))] then
-			print ("|cffefc051Artifact Whispers|r: Dual-Voice Percent is currently set to |cff51c0ef" .. ArtifactWhispersSettings.DualProbabilityPercent .. "%|r.");
+			print("|cffefc051Artifact Whispers|r: Dual-Voice Percent is currently set to |cff51c0ef" .. ArtifactWhispersSettings.DualProbabilityPercent .. "%|r.");
 		end
 		if SingleProbabilitySpecs[select(1, GetSpecializationInfo(GetSpecialization()))] then
-			print ("|cffefc051Artifact Whispers|r: Percent is currently set to |cff51c0ef" .. ArtifactWhispersSettings.soundProbabilityPercent .. "%|r.");
+			print("|cffefc051Artifact Whispers|r: Percent is currently set to |cff51c0ef" .. ArtifactWhispersSettings.soundProbabilityPercent .. "%|r.");
+		end
+	elseif (command == "joke") or (command == "silly") or (command == "pissed") then
+		--[[if not (select(1, GetSpecializationInfo(GetSpecialization())) == 251) or not (select(1, GetSpecializationInfo(GetSpecialization())) == 63) then --frost and fire
+			print("|cffefc051Artifact Whispers|r: |cFFFF0000Your class and specialization does not have this option available.|r");
+		end]]
+		--[[Above has problems where if you're still the correct spec (fire) it will still send the message because you're not a Frost DK. 
+		Will probably just have to make a small table or something instead and make it one variable.]]--
+		do ArtifactWhispers.JokeSoundService.playNextJokeSound();
 		end
     else
         print("|cffefc051Artifact Whispers|r: |cFFFF0000Invalid command|r. Try: |cff51c0efpercent|r, |cff51c0efwhispers|r, |cff51c0efsounds|r, |cff51c0efreset|r, |cff51c0efinfo|r.");
+	
 	end
 end
 
@@ -149,6 +157,7 @@ function frame:OnEvent(event, arg1)
 				DualProbabilityPercent = 1/2,
                 nextSound = 1,
 				nextSecondarySound = 1,
+				nextJokeSound = 1,
             };
         end
 		

@@ -929,15 +929,15 @@ titanstrikeSounds = {
 		["text"] = "You might want to take cover!",
 	},
 	{
-		["file"] = "Sound\\Creature\\Mimiron\\VO_703_Mimiron_21",
+		["file"] = "Sound\\Creature\\Mimiron\\VO_703_Mimiron_21.ogg",
 		["text"] = "Everything is science if you write it down!",
 	},
 	{
-		["file"] = "Sound\\Creature\\Mimiron\\VO_703_Mimiron_27",
+		["file"] = "Sound\\Creature\\Mimiron\\VO_703_Mimiron_27.ogg",
 		["text"] = "Time for some science!",
 	},
 	{
-		["file"] = "Sound\\Creature\\Mimiron\\VO_703_Mimiron_28",
+		["file"] = "Sound\\Creature\\Mimiron\\VO_703_Mimiron_28.ogg",
 		["text"] = "We can solve any problem!",
 	},
 };
@@ -3529,6 +3529,11 @@ local function incrementSound ()
 				ArtifactWhispersSettings.nextSound = 1;
 			end
 		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 73 then --protection
+			if WarriorArtifacts.earthwarderIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())] and (ArtifactWhispersSettings.nextSound > 6) then
+				ArtifactWhispersSettings.nextSound = 1;
+			end
+		end
 	end
 	
 --[[if select(3, UnitClass("player")) == NUMBER then --CLASS
@@ -3678,7 +3683,7 @@ SoundService.playNextSound = function()
 						end
 						if (ArtifactWhispersSettings.showWhispers == true) then
 							local msg = DemonHunterArtifacts.twinbladesmuramasSounds[nextSound].text
-							local sender = "Muramus"
+							local sender = "Muramas"
 							local info = ChatTypeInfo["MONSTER_WHISPER"]
 							local body = CHAT_WHISPER_GET:format(sender) .. msg
 							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
@@ -4191,6 +4196,25 @@ SoundService.playNextSound = function()
 							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
 						end
 					incrementSecondarySound();
+					end
+			end
+		end
+		if select(1, GetSpecializationInfo(GetSpecialization())) == 73 then --protection
+			if WarriorArtifacts.earthwarderIDList[select(8, C_ArtifactUI.GetEquippedArtifactInfo())]then
+				local ShouldPlaySound = math.random(100 / ArtifactWhispersSettings.soundProbabilityPercent);
+				local nextSound = ArtifactWhispersSettings.nextSound;
+					if (ShouldPlaySound == 1) then
+						if (ArtifactWhispersSettings.playSounds == true) then
+							PlaySoundFile(WarriorArtifacts.earthwarderSounds[nextSound].file, "Dialog");
+						end
+						if (ArtifactWhispersSettings.showWhispers == true) then
+							local msg = WarriorArtifacts.earthwarderSounds[nextSound].text
+							local sender = "An Unknown Voice"
+							local info = ChatTypeInfo["MONSTER_WHISPER"]
+							local body = CHAT_WHISPER_GET:format(sender) .. msg
+							DEFAULT_CHAT_FRAME:AddMessage(body, info.r, info.g, info.b, info.id)
+						end
+					incrementSound();
 					end
 			end
 		end
