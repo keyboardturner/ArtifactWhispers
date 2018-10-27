@@ -2931,7 +2931,7 @@ skullofmanariIDList = {
 
 --Destruction Warlock--
 sargerasSounds = {
-	{
+	--[[{
 		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_01.ogg",
 		["text"] = "The darkness... it flows within me... it seeps from every vein...",
 	},
@@ -2966,7 +2966,55 @@ sargerasSounds = {
 	{
 		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_NERZHUL_Custom_09.ogg",
 		["text"] = "Witness the dark majesty of the void!",
-	},
+	},]]
+	{
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_703_Sargeras_01_M.ogg",
+		["text"] = "Behold... the Legion's power.",      
+	},                                                                                       
+	{                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\VO_703_Sargeras_02_M.ogg",
+		["text"] = "No matter how hard this world fights, it will fall.",                                        
+	},                                                                                       
+	{                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_02_m.ogg",
+		["text"] = "Become the instrument of my wrath, end this incursion of the Light to ensure the victory of my crusade.",    
+	},       
+	{                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_05_m.ogg",
+		["text"] = "No power in the Universe will stand against the Legion!",                                                   
+	},   	
+	{                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_07_m.ogg",
+		["text"] = "Together, we will defeat the hungering void that would consume us all.",                                              
+	},                                                                                                                                                                         
+	--[[{                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_CAST_SOULSTONE.ogg",
+		["text"] = "The mortals must not disrupt the rebirth.",                                            
+	},                                                                                       
+	{                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_ENEMY_VANISH.ogg",
+		["text"] = "Become the instrument of my wrath once again.",                                                        
+	},                                                                                       
+	{                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_LOW_HEALTH_or_BG_RESURRECTION_TIMER.ogg",
+		["text"] = "The hour of rebirth draws near...",                                        
+	},                                                                                       
+	{                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_ENEMY_VANISH.ogg",
+		["text"] = "One still eludes us...",
+	},                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_IN_CAPITAL_CITY.ogg",
+		["text"] = "Pledge the hearts of your people to my cause.",
+	},                                                                                       
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_LVLUP_or_LEARNING_SPELL.ogg",
+		["text"] = "Knowledge beyond imagining!",
+	},                                                                                        
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_KILL_ENEMY.ogg",
+		["text"] = "Might beyond measure!",
+	},                                                                                      
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\wg_sargeras_custom_DEATH.ogg",
+		["text"] = "You have failed me!",
+	},]]
 };
 	--Destruction Warlock--
 sargerasIDList = {
