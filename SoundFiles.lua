@@ -2992,7 +2992,7 @@ sargerasSounds = {
 		["text"] = "The mortals must not disrupt the rebirth.",                                            
 	},                                                                                       
 	{                                                                                        
-		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_ENEMY_VANISH.ogg",
+		["file"] = "Interface\\AddOns\\ArtifactWhispers\\SoundFiles\\DestroLock Artifact\\vo_73_voice_of_sargeras_custom_RESURRECTED.ogg",
 		["text"] = "Become the instrument of my wrath once again.",                                                        
 	},                                                                                       
 	{                                                                                        
